@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Paginação</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style> 
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<nav aria-label="Paginador">
+				    <ul class="pagination">
+				        <li class="page-item"><a class="page-link" href="#">anterior</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">1</a></li>
+				    	<li class="page-item"><a class="page-link" href="#">2</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+				    </ul>
+				</nav>
+			</div>
+		</div>
+		<!-- UTILIZANDO ÍCONES P/ ANTERIOR E PRÓXIMO -->
+		<div class="row">
+			<div class="col-12">
+				<nav aria-label="Paginador">
+				    <ul class="pagination">
+				        <li class="page-item">
+				        	<a class="page-link" href="#">
+				        		<span aria-hidden="true">&laquo;</span>
+				        		<!-- SPAN PARA TECNOLOGIAS ASSISTIVAS -->
+				        		<span class="sr-only">Anterior</span>
+				        	</a>
+				        </li>
+				     	<li class="page-item"><a class="page-link" href="#">1</a></li>
+				    	<li class="page-item"><a class="page-link" href="#">2</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">3</a></li>
+				        <li class="page-item">
+				        	<a class="page-link" href="#">
+				        		<span aria-hidden="true">&raquo;</span>
+				        		<!-- SPAN PARA TECNOLOGIAS ASSISTIVAS -->
+				        		<span class="sr-only">Próximo</span>				        		
+				        	</a>
+				        </li>
+				    </ul>
+				</nav>
+			</div>
+		</div>
+		<!-- DESABILITANDO ITENS E DEIXANDO COMO ATIVO -->		
+		<div class="row">
+			<div class="col-12">
+				<nav aria-label="Paginador">
+				    <ul class="pagination">
+				        <li class="page-item disabled"><a class="page-link" href="#">anterior</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">1</a></li>
+				    	<li class="page-item active"><a class="page-link" href="#">2</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+				    </ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+		<!-- TAMANHO PERSOLNALIDADO -->		
+		<div class="row">
+			<div class="col-12">
+				<nav aria-label="Paginador">
+				    <ul class="pagination pagination-lg">
+				        <li class="page-item disabled"><a class="page-link" href="#">anterior</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">1</a></li>
+				    	<li class="page-item active"><a class="page-link" href="#">2</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+				    </ul>
+				</nav>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-12">
+				<nav aria-label="Paginador" >
+				    <ul class="pagination pagination-sm">
+				        <li class="page-item disabled"><a class="page-link" href="#">anterior</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">1</a></li>
+				    	<li class="page-item active"><a class="page-link" href="#">2</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+				    </ul>
+				</nav>
+			</div>
+		</div>
+		<!-- POSICIONAMENTO DO PAGINADOR -->		
+		<div class="row">
+			<div class="col-12">
+				<nav aria-label="Paginador">
+				    <ul class="pagination pagination justify-content-center"> <!-- CENTRO -->
+				        <li class="page-item disabled"><a class="page-link" href="#">anterior</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">1</a></li>
+				    	<li class="page-item active"><a class="page-link" href="#">2</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+				    </ul>
+				</nav>
+			</div>
+		</div>		
+		<div class="row">
+			<div class="col-12">
+				<nav aria-label="Paginador">
+				    <ul class="pagination pagination justify-content-end"> <!-- DIREITA -->
+				        <li class="page-item disabled"><a class="page-link" href="#">anterior</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">1</a></li>
+				    	<li class="page-item active"><a class="page-link" href="#">2</a></li>
+				     	<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+				    </ul>
+				</nav>
+			</div>
+		</div>		
+	</div>
+
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>

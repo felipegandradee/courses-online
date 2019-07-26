@@ -1,0 +1,140 @@
+<!-- 			//comando para gerar a exportação do Word    -->
+	
+   <html
+
+	    xmlns:o='urn:schemas-microsoft-com:office:office'
+
+	    xmlns:w='urn:schemas-microsoft-com:office:word'
+
+	    xmlns='http://www.w3.org/TR/REC-html40'> 
+	    <head><title>Time</title>
+
+	</head>
+		<body>
+			                 <!-- ARQUIVO QUE GERA WORD SEM OS BOTÕES DO FORMULARIO (WORD E IMPRESSÃO) -->
+
+
+                 
+                <html>
+                    <head>
+                        <meta charset="UTF-8">
+                        <title>Caso de testes</title>
+                        <!--<link rel="stylesheet" type="text/css" href= "../../gui/themes/default/css/ReportTheme.css">-->
+                        <style type="text/css">
+                            body {
+                                font-family: "Arial Narrow";
+                                background-color: #fafafa;
+                                -webkit-print-color-adjust: exact;
+                            }
+                            .column{
+                                color: #FFFFFF;
+                                background: #5E5E5E;
+                            }
+
+                            tr{
+                                break-inside: avoid;
+                            }
+
+                            td{
+                                break-inside: avoid;
+                                border: 1px solid;
+                                border-color: #000;
+                            }
+                            @media print { 
+                                #noprint { display:none; } 
+                                body { background: #fff; }
+                            }
+
+                        </style>
+                    </head>
+                    <body>
+                        <span>
+                            <!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title> Global Payments</title>
+<link type="text/css" rel="stylesheet" href="http://128.127.50.221/cobaialink/gui/themes/default/css/tl_documents.css" />
+<style>@page{	mso-page-orientation: landscape;	size: 21cm 29.7cm;    margin:1cm 2cm 1cm 2cm;}@page Section1 {	mso-header-margin:.5in;	mso-footer-margin:.5in;	mso-header: h1;	mso-footer: f1;	}div.Section1 { page:Section1; }table#hrdftrtbl{	margin:0in 0in 0in 900in;	width:1px;	height:1px;	overflow:hidden;}p.MsoFooter, li.MsoFooter, div.MsoFooter{	margin:0in;	margin-bottom:.0001pt;	mso-pagination:widow-orphan;	tab-stops:center 3.0in right 6.0in;	font-size:12.0pt;}</style>
+</head>
+<body>
+<div class='Section1'>
+<table width='900' class=MsoHeader id='hrdftrtbl' border='0' cellspacing='0' cellpadding='0'><tr><th><div style="mso-element:header" id=h1 ><p style="display:inline; text-align: left;"><img alt="AgTestlink Logo" title="configure using $tlCfg->document_generator->company_logo" height="71"width="63" src="http://128.127.50.221/cobaialink/gui/themes/default/images/Argotechno2.png" />&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;<img alt="Acquirer Logo" title="configure using $tlCfg->document_generator->acq_gp_logo" height="66"width="159" src="http://128.127.50.221/cobaialink/gui/themes/default/images/GlobalPay.png" /></div></th></tr></table></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="doc_title" style="font-size:180%"><p>Relatório de Execução</p><p>Roteiro executado</p></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="doc_title" style="text-align:left;margin: auto; font-size:180%;"><p><style>body{background-color:FFF;}</style></div>
+</body>
+</html>
+                            <br style="page-break-before: always;"><br/><b> <p style="font-weight: bold;font-size:14px">1. Solution Data </p><table ><tr><td  class="labelHolder" >Solicitant Name</td><td  >Global Payments</td></tr>
+<tr><td  class="labelHolder" >Request Date</td><td  >10/17/2018 02:00:00</td></tr>
+<tr><td  class="labelHolder" >Analyst in charge</td><td  >Alan Kanashiro</td></tr>
+<tr><td  class="labelHolder" >Responsable for Double</td><td  ></td></tr>
+<tr><td  class="labelHolder" >QA  in Charge - Release</td><td  >Arthur Cordeiro</td></tr>
+<tr><td  class="labelHolder" >QA in Charge - Report</td><td  >&nbsp;</td></tr>
+<tr><td  class="labelHolder" >Specification version and Name</td><td  >Visa Smart Debit/Credit Acquirer Device Validation Toolkit User Guide Version 7.0</td></tr>
+<tr><td  class="labelHolder" >Guide version and Name</td><td  >&nbsp;ADVT User Guide V 7.0</td></tr>
+<tr><td  class="labelHolder" >Terminal Model</td><td  >PPC930</td></tr>
+<tr><td  class="labelHolder" >Terminal Manufacturer</td><td  >Gertec</td></tr>
+<tr><td  class="labelHolder" >Application Name - Automation</td><td  >N/A</td></tr>
+<tr><td  class="labelHolder" >Application version - automation</td><td  >N/A</td></tr>
+<tr><td  class="labelHolder" >Application Name - Server</td><td  >DTEF</td></tr>
+<tr><td  class="labelHolder" >Application version - Server</td><td  >8.22.01.04</td></tr>
+<tr><td  class="labelHolder" >Application Name - Client</td><td  >DPOS</td></tr>
+<tr><td  class="labelHolder" >Application version - Client</td><td  >8.22.01.04</td></tr>
+<tr><td  class="labelHolder" >Library version</td><td  >2.03</td></tr>
+<tr><td  class="labelHolder" >EMVCo lvl 1</td><td  >13051 0514 400 21 CET</td></tr>
+<tr><td  class="labelHolder" >EMVCo LV1 - Expiration date</td><td  >04/23/2022</td></tr>
+<tr><td  class="labelHolder" >EMVCo lvl 2</td><td  >2-03516-1-2C-CET-0416-4.3.e</td></tr>
+<tr><td  class="labelHolder" >Kernel's version</td><td  >EMVS_GEDI_BC Version v1.15</td></tr>
+<tr><td  class="labelHolder" >Kernel - Expiration date</td><td  >04/13/2019</td></tr>
+<tr><td  class="labelHolder" >LoA ABECS</td><td  >CPA_AGT_160224_143525</td></tr>
+<tr><td  class="labelHolder" >PCI PTS</td><td  >4-20298</td></tr>
+<tr><td  class="labelHolder" >PCI - Expiration date</td><td  >04/30/2023</td></tr>
+<tr><td  class="labelHolder" >TQM</td><td  >TQM0457/01</td></tr>
+<tr><td  class="labelHolder" >TQM - Expiration date</td><td  >02/16/2019</td></tr>
+<tr><td  class="labelHolder" >Waiver - Applicability</td><td  >NÃO</td></tr>
+<tr><td  class="labelHolder" >Waiver - Identification</td><td  > </td></tr>
+<tr><td  class="labelHolder" >Waiver - Expiration date</td><td  > </td></tr>
+<tr><td  class="labelHolder" >Device Manufacturer (MPOS)</td><td  >&nbsp;&nbsp;</td></tr>
+<tr><td  class="labelHolder" >Mobile device model (MPOS)</td><td  >&nbsp;</td></tr>
+<tr><td  class="labelHolder" >Model number (MPOS)</td><td  >&nbsp;</td></tr>
+<tr><td  class="labelHolder" >Operating System name (MPOS)</td><td  >&nbsp;</td></tr>
+<tr><td  class="labelHolder" >Operating System version(MPOS)</td><td  >&nbsp;</td></tr>
+<tr><td  class="labelHolder" >Kernel Version (MPOS)</td><td  >&nbsp;</td></tr>
+<tr><td  class="labelHolder" >Compilation Version (MPOS)</td><td  >&nbsp;</td></tr>
+<tr><td  class="labelHolder" >EMVCo lvl 1 (CTLS)</td><td  ></td></tr>
+<tr><td  class="labelHolder" >EMVCo lvl 1 (CTLS) - Expiration date</td><td  ></td></tr>
+<tr><td  class="labelHolder" >Kernel - PayPass (CTLS)</td><td  ></td></tr>
+<tr><td  class="labelHolder" >Kernel - PayPass (CTLS) - Expiration date</td><td  ></td></tr>
+<tr><td  class="labelHolder" >LOA LV2 (PayPass)</td><td  ></td></tr>
+<tr><td  class="labelHolder" >LOA LV2 (PayPass) - Expiration date</td><td  ></td></tr>
+<tr><td  class="labelHolder" >TQM - PayPass (CTLS)</td><td  ></td></tr>
+<tr><td  class="labelHolder" >TQM - PayPass (CTLS) - Expiration date</td><td  ></td></tr>
+<tr><td  class="labelHolder" >Kernel - PayWave (CTLS)</td><td  ></td></tr>
+<tr><td  class="labelHolder" >Kernel - PayWave (CTLS) - Expiration date</td><td  ></td></tr>
+<tr><td  class="labelHolder" >LOA LV2 (PayWave)</td><td  ></td></tr>
+<tr><td  class="labelHolder" >LOA LV2 (PayWave) - Expiration date</td><td  ></td></tr>
+</table></table><br><p style="font-weight: bold;font-size:14px">2. Done By </p><table width="100%" style="border: 1px solid black; border-collapse: collapse;"><tr height="24" style="border: 1px solid black;">	<th width="50%" style="border: 1px solid black; background-color: #E2ECD9;">Title</th>	<th width="50%" style="border: 1px solid black; background-color: #E2ECD9;">Name, Date</th></tr><tr height="54" style="border: 1px solid black;">	<td width="50%" style="border: 1px solid black;">&nbsp;</td>	<td width="50%" style="border: 1px solid black;">&nbsp;</td></tr></table><br><p style="font-weight: bold;font-size:14px">3. Reference Docs </p><table width="100%" style="border: 1px solid black; border-collapse: collapse;"><tr style="border: 1px solid black;">	<th rowspan="3" width="20%" style="border: 1px solid black; background-color: #E2ECD9;">Reference</th>	<th height="24" width="20%" style="border: 1px solid black; background-color: #E2ECD9;">Documents</th>	<th height="24" width="60%" style="border: 1px solid black; background-color: #E2ECD9;">Version Name</th></tr><tr style="border: 1px solid black;">	<td height="24" width="20%" style="border: 1px solid black;"></td>	<td height="24" width="60%" style="border: 1px solid black;"></td></tr><tr style="border: 1px solid black;">	<td height="24" width="20%" style="border: 1px solid black;"></td>	<td height="24" width="60%" style="border: 1px solid black;"></td></tr></table><br><p style="font-weight: bold;font-size:14px">4. Circle Percentage </p><table width="100%" style="border: 1px solid black; border-collapse: collapse;"><tr height="24" style="border: 1px solid black;">	<th style="border: 1px solid black; background-color: #E2ECD9;">Not Run [%]</th>	<th style="border: 1px solid black; background-color: #E2ECD9;">Passed [%]</th>	<th style="border: 1px solid black; background-color: #E2ECD9;">Failed [%]</th>	<th style="border: 1px solid black; background-color: #E2ECD9;">Warning [%]</th></tr><tr height="24" style="border: 1px solid black;">	<td style="border: 1px solid black;">0</td>	<td style="border: 1px solid black;">0</td>	<td style="border: 1px solid black;">100</td>	<td style="border: 1px solid black;">0</td></tr></table></b><br style="page-break-before: always;"><br/><br/><p style="font-weight: bold;font-size:14px"<b>5. Test Cases Failure Count</b> </p><table width="100%" style="border: 1px solid black; border-collapse: collapse;"><tr height="24" style="border: 1px solid black;">   <th style="border: 1px solid black; background-color: #E2ECD9;">Total Failure Count </th>   <th style="border: 1px solid black; background-color: #E2ECD9;">Error Type Count </th></tr><tr height="24" style="border: 1px solid black;">   <td style="border: 1px solid black; text-align: center;">22</td>   <td style="border: 1px solid black; text-align: center;">0</td></tr></table></b><br style="page-break-before: always;"><br/><br/>
+                        </span>  
+                                            </body>
+                </html>
+	</body>
+</html>
+<!-- 	Fim		-->

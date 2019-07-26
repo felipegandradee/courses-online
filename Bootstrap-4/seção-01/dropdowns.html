@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Dropdowns</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style> 
+</head>
+<body>
+	
+	<div class="container">
+		<!-- DROPDOWN EM UM BOTÃO -->
+		<div class="row">
+			<div class="col-12">
+				<div class="dropdown">
+					<button id="button1" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<!-- dropdown-toggle - ITEM A SER ESCONDIDO E QUE IRÁ APARECER -->
+						Button Dropdown
+					</button>
+					<div class="dropdown-menu" aria-labelledby="button1">
+						<a class="dropdown-item" href="#">Link 1</a>
+						<a class="dropdown-item" href="#">Link 2</a>
+						<a class="dropdown-item" href="#">Link 3</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- DROPDOWN EM UM LINK -->
+		<div class="row">
+			<div class="col-12">
+				<div class="dropdown">
+					<a id="button2" class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Link Dropdown</a>
+					<div class="dropdown-menu" aria-labelledby="button2">
+						<!-- ADICIONANDO UM CABEÇALHO -->
+						<h6 class="dropdown-header"> Cabeçalho do meu dropdown</h6>
+						<a class="dropdown-item" href="#">Link 1</a>
+						<a class="dropdown-item disabled" href="#">Link 2</a> <!-- disabled - DESABILITA O LINK-->
+						<a class="dropdown-item" href="#">Link 3</a>
+						<!-- ADICIONANDO UMA DIVISÃO ENTRE OS LINKS -->
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header"> Cabeçalho do meu dropdown</h6>
+						<a class="dropdown-item" href="#">Link Separado</a>						
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Input Group</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style> 
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<!-- CLASSE DE AGRUPAGEM -->
+				<div class="input-group"> 
+					<!-- TAG SPAN NO FINAL-->
+					<span class="input-group-addon" id="input1">@</span>
+					<input class="form-control" type="text" name="input1" placeholder="Nome de Usuário"
+					aria-label="Nome de Usuário" aria-decribedby="input1">
+				</div>				
+			</div> 
+			<div class="col-4">
+				<div class="input-group"> 
+					<!-- TAG SPAN NO COMEÇO-->					
+					<input class="form-control" type="text" name="input1" placeholder="Nome de Usuário"
+					aria-label="Nome de Usuário" aria-decribedby="input1">
+					<span class="input-group-addon" id="input1">@seudominio.com.br</span>
+				</div>				
+			</div>
+			<div class="col-4">
+				<div class="input-group"> 
+					<!-- TAG SPAN NO COMEÇO E FINAL-->	
+					<span class="input-group-addon" id="input1">R$</span>				
+					<input class="form-control" type="text" name="input1" placeholder="Nome de Usuário"
+					aria-label="Nome de Usuário" aria-decribedby="input1">
+					<span class="input-group-addon" id="input1">.00</span>
+				</div>				
+			</div>
+			<div class="col-4">	<!-- INPUT COM TAMANHO MAIOR-->	
+				<div class="input-group input-group-lg"> 				
+					<span class="input-group-addon" id="input1">R$</span>				
+					<input class="form-control" type="text" name="input1" placeholder="Nome de Usuário"
+					aria-label="Nome de Usuário" aria-decribedby="input1">					
+				</div>				
+			</div>
+		</div>
+		<!-- AGRUPANDO CHECKBOX E RADIOS -->
+		<div class="row">
+			<div class="col-4">
+				<div class="input-group"> 
+					<!-- CHECKBOX C/ TEXT-->
+					<span class="input-group-addon" id="input1">
+						<input type="checkbox"aria-label="Checkbox acompanhando um input de Texto" >
+					</span>				
+					<input class="form-control" type="text" aria-label="Input de texto acompanhando Checkbox">						
+				</div>				
+			</div> 
+			<div class="col-4">
+				<div class="input-group"> 
+					<!-- RADIO C/ TEXT -->
+					<span class="input-group-addon" id="input1">
+						<input type="radio"aria-label="radio acompanhando um input de Texto" >
+					</span>				
+					<input class="form-control" type="text" aria-label="Input de texto acompanhando radio">						
+				</div>				
+			</div> 
+			<div class="col-4">
+				<div class="input-group"> 
+					<!-- AGRUPANDO COM BOTÕES -->			
+					<input class="form-control" type="text" placeholder="Pesquisar por...">
+					<span class="input-group-btn" id="input1">
+						<button class="btn btn-secondary">Buscar</button>
+					</span>							
+				</div>				
+			</div> 
+	</div>
+
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>

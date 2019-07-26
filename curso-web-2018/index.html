@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<html lang="pt-BR">
+		<head>			
+			<title>Estilizando a Página</title>
+			<meta charset="utf-8">
+			<!-- TAG de estilização do CSS -->
+			<style>
+				/* Aplicando diretamente na Tag. */
+				figure{
+					float:right;
+					border: 1px solid #999;
+					margin-left: 15px;
+					margin-bottom: 10px;
+					padding: 3px;
+				}
+
+				figure-caption{
+					background: #D9D5D5;
+					font-family: sans-serif;
+					font-size: 11px;
+					padding: 3px;
+				}
+			</style>
+		</head>
+		<body>
+			<hgroup> <!-- Agrupando todos os Headers do h1 até o h6 desta página -->
+				<h1>Trabalhando com Imagens</h1>
+				<h2>Development</h2>
+			</hgroup>
+			<figure>
+				<a href="index/exercicios-limpos/unidade07/exercicio03/index.html">
+					<img src="dev.jpg" width="380" height="120" title="Developer image" 
+						 alt="Developer image" >
+				</a>
+				<!-- Inserindo a legenda abaixo da imagem -->
+				<figcaption>
+					Foto de um desenvolvedor no seu trabalho (Foto: Felipe)
+				</figcaption>
+			</figure>
+			<p>
+				Suspendisse volutpat enim libero, nec porttitor felis elementum ut. Sed luctus eros ut dapibus imperdiet. Nunc pharetra dignissim ipsum, vitae semper erat sollicitudin id. Sed lorem lectus, interdum sed imperdiet ultrices, tincidunt non elit. Quisque at scelerisque magna, vitae fringilla dui. Maecenas accumsan, ex non facilisis sagittis, ligula ex laoreet nunc, sit amet malesuada nulla augue sed dui. Proin elit lorem, vulputate vel luctus a, mattis maximus orci. Mauris nec viverra nisl, vel porttitor elit. Maecenas vitae lacinia enim. Suspendisse in leo elementum, bibendum tortor nec, gravida odio.
+			</p>
+
+			<!-- vículo para uma subpasta dentro desse diretório -->
+			<p><a href="teste/computer.html">Conheça nossa página de computadores</a></p>
+
+			<!-- vículo para voltar desse diretório e acessar outra pasta -->
+			<p><a href="../outrapasta/novo.html">Conheça nossa nova página</a></p>
+
+			<!-- vículo para voltar duas pastas desse diretório e acessar outra pasta -->
+			<p><a href="../../outrasegundapasta/novo.html">Conheça nossa outra página</a></p>			
+
+			<p class="clear-right">
+				Suspendisse volutpat enim libero, nec porttitor felis elementum ut. Sed luctus eros ut dapibus imperdiet. Nunc pharetra dignissim ipsum, vitae semper erat sollicitudin id. Sed lorem lectus, interdum sed imperdiet ultrices, tincidunt non elit. Quisque at scelerisque magna, vitae fringilla dui. Maecenas accumsan, ex non facilisis sagittis, ligula ex laoreet nunc, sit amet malesuada nulla augue sed dui. Proin elit lorem, vulputate vel luctus a, mattis maximus orci. Mauris nec viverra nisl, vel porttitor elit. Maecenas vitae lacinia enim. Suspendisse in leo elementum, bibendum tortor nec, gravida odio.
+
+			</p>
+
+			<!-- vículo com uma página externa, ou seja, fora deste site -->
+			<p><a href="http://www.google.com" target="_blank">Nosso buscador padrão</a></p> 
+			<!-- taget='_blank' abre o link em outra página -->
+		
+		</body>
+	</html>

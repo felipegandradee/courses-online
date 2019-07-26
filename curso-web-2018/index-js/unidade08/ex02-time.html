@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            function setDoisDigitos(tempo){
+                if(tempo < 10 ){
+                    return "0" + tempo;
+                } else {
+                    return tempo;
+                }
+            }
+            var agora = new Date();
+            console.log(setDoisDigitos(agora.getHours()) + ":" + setDoisDigitos(agora.getMinutes()) + ":" + setDoisDigitos(agora.getSeconds()));
+
+            // DETERMINAR HORAS - NEW DATE(ANO, MÊS, DIA, HORA, MINUTO, SEGUNDO)
+            var aniversario = new Date(1999,6,3,8,30,0);
+            console.log(aniversario);
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

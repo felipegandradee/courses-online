@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Bibliotecas Externas - Biblioteca de Ícones Iconic</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- FONTES DO ICONIC NO BOOTSTRAP -->
+	<link href="iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+
+		.icon {
+			width: 20px;
+		}
+	</style> 
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<img src="iconic/svg/key.svg" alt="Ícone chave" class="icon">
+			</div>
+		</div>
+		<!-- ÍCONE DENTRO DE UM BOTÃO -->
+		<div class="row">
+			<div class="col-12">
+				<button class="btn btn-secundary">
+					<img src="iconic/svg/key.svg" alt="Ícone chave" class="icon"> Chave
+				</button>
+				<button class="btn btn-secundary">
+					<img src="iconic/svg/pie-chart.svg" alt="Ícone Gráfico" class="icon"> Gráfico
+				</button>
+			</div>
+		</div>
+		<!-- ÍCONE POR MEIO DE UMA FONT -->
+		<div class="row">
+			<div class="col-12">
+				<button class="btn btn-primary">
+					<span class="oi oi-tag" title="icone tag" aria-hidden="true"></span> TAG
+				</button>
+				<button class="btn btn-warning">
+					<span class="oi oi-warning" title="icone Atenção" aria-hidden="true"></span> Atenção
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>

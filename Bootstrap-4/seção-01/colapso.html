@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Colapso</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style> 
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p>
+					<!-- DISPARADOR DO TIPO LINK -->
+					<a href="#ItemColapso1" class=" btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="ItemColapso1">Disparador Link</a>
+					<!-- DISPARADOR DO TIPO BUTTON -->
+					<button class=" btn btn-primary" data-toggle="collapse" type="button" data-target="#ItemColapso1" aria-expanded="false" aria-controls="ItemColapso1">Disparador Botão</button>
+				</p>
+				<div class="collapse" id="ItemColapso1">
+					<div class="card card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				</div>
+			</div>
+		</div>
+		<!-- MAIS DE UM CONTEÚDO PARA CADA DISPARADOR -->
+		<div class="row">
+			<div class="col-12">
+				<p>
+					<!-- DISPARADOR DO TIPO LINK -->
+					<a href="#ItemColapso2" class=" btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="ItemColapso2">Disparador Link</a>
+					<!-- DISPARADOR DO TIPO BUTTON -->
+					<button class=" btn btn-primary" data-toggle="collapse" type="button" data-target="#ItemColapso3" aria-expanded="false" aria-controls="ItemColapso3">Disparador Botão</button>
+				</p>
+				<div class="collapse" id="ItemColapso2">
+					
+					<div class="card card-body">
+						<h4>Item 1</h4>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+				<div class="collapse" id="ItemColapso3">
+					
+					<div class="card card-body">
+						<h4>Item 2</h4>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- AO CLICAR EM UM DISPARADOR OS DEMAIS SE OCULTAM COM SEUS CONTEÚDOS -->
+		<div class="row">
+			<div class="col-12">
+				<div id="accordion" role="tablist">
+					<div class="card">
+						<div class="card-header" role="tab" id="header1">
+							<h5 class="mb-0">
+								<a href="#colapso1" data-toggle="collapse"  aria-expanded="true" aria-control="colapso1">
+									Link para Colapso #1
+								</a>
+							</h5>
+						</div>
+						<div id="colapso1" class="collapse show" role="tabpanel" aria-labelledby="header1" data-parent="#accordion">
+							<div class="card-body">
+								<h5>Item Colapso #1</h5>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+						<div class="card-header" role="tab" id="header2">
+							<h5 class="mb-0">
+								<a href="#colapso2" data-toggle="collapse" aria-expanded="false" aria-control="colapso2">
+									Link para Colapso #2
+								</a>
+							</h5>
+						</div>
+						<div id="colapso2" class="collapse" role="tabpanel" aria-labelledby="header2" data-parent="#accordion">
+							<div class="card-body">
+								<h5>Item Colapso #2</h5>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+						<div class="card-header" role="tab" id="header3">
+							<h5 class="mb-0">
+								<a href="#colapso3" data-toggle="collapse" aria-expanded="false" aria-control="colapso3">
+									Link para Colapso #3
+								</a>
+							</h5>
+						</div>
+						<div id="colapso3" class="collapse" role="tabpanel" aria-labelledby="header3" data-parent="#accordion">
+							<div class="card-body">
+								<h5>Item Colapso #3</h5>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Barra de Progresso</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style> 
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-12 exemplo">
+				<div class="progress mb-2">
+					<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+					aria-valuemax="100">
+					0%						
+					</div>
+				</div>
+				<div class="progress mb-2"> <!--mb-2 USADO PARA DEFINIR O MARGIN-BOTTOM -->
+					<div class="progress-bar w-25 bg-success" role="progressbar" 
+					aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> 
+					<!-- w-25: VALOR QUE A BARRA DE PROGRESSO ESTÁ OCUPANDO -->	
+					25%	
+					</div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar w-50 bg-primary" role="progressbar" 
+					aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+					50%		
+					</div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar w-75 bg-danger" role="progressbar" 
+					aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"> 
+					75%		
+					</div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar w-100 bg-warning" role="progressbar"
+					 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">	
+					100%
+					</div>
+				</div>
+				<!-- UMA BARRA COM MÚLTIPLOS VALORES DE PROGRESSO -->
+				<div class="progress mb-2">
+					<div class="progress-bar w-25 bg-success" role="progressbar"
+					 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">	
+					25%
+					</div>
+					<div class="progress-bar w-50 bg-danger" role="progressbar"
+					 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">	
+					50%
+					</div>
+				</div>
+				<!-- BARRA COM SEU VALOR DE PROGRESSO LISTRADO -->
+				<div class="progress mb-2">
+					<div class="progress-bar w-75 bg-success progress-bar-striped" role="progressbar" 
+					aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"> 
+					75%		
+					</div>
+				</div>
+				<!-- BARRA COM SEU VALOR DE PROGRESSO LISTRADO E COM ANIMAÇÃO -->
+				<div class="progress mb-2">
+					<div class="progress-bar w-50 bg-success progress-bar-striped progress-bar-animated" role="progressbar" 
+					aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> 
+					50%		
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>

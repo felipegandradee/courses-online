@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Novos Componentes incluídos no Bootstrap 4.2 - Spinners</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style> 
+</head>
+<body>
+	<div class="containe mt-5">
+		<div class="spinner-border" role="status">
+				<span class="sr-only">Carregando...</span><!-- sr-only : NÃO VISÍVEL NA PÁGINA -->
+		</div>	
+		<!-- ADICIONANDO CORES -->
+		<div class="spinner-border text-primary" role="status">
+				<span class="sr-only">Carregando...</span>
+		</div>	
+		<div class="spinner-border text-danger" role="status">
+				<span class="sr-only">Carregando...</span>
+		</div>
+
+		<!-- EFEITO DIFERNTE NO SPINNER -->
+		<div class="spinner-grow" role="status">
+				<span class="sr-only">Carregando...</span>
+		</div>		
+		<div class="spinner-grow text-success" role="status">
+				<span class="sr-only">Carregando...</span>
+		</div>	
+		<div class="spinner-grow text-warning" role="status">
+				<span class="sr-only">Carregando...</span>
+		</div>			
+
+		<!-- TAMANHO PERSONALIZADO -->
+		<div class="spinner-border text-danger spinner-border-sm" role="status">
+				<span class="sr-only">Carregando...</span>
+		</div>
+		<div class="spinner-grow spinner-grow-sm" role="status">
+				<span class="sr-only">Carregando...</span>
+		</div>	
+		<!-- TAMANHO POR CSS -->
+		<div class="spinner-border text-danger " role="status" style="width: 3rem; height: 3rem;">
+				<span class="sr-only">Carregando...</span>
+		</div>
+		<div class="spinner-grow" role="status" style="width: 3rem; height: 3rem;">
+				<span class="sr-only">Carregando...</span>
+		</div>		
+		<!--SPINNER DENTRO DE UM BOTÃO -->
+		<button class="btn btn-primary" type="button" disabled>
+			<span class="spinner-border spinner-border-sm " role="status" aria-hidden="true"></span>
+			<span class="sr-only">Carregando...</span>
+			Carregando...
+		</button>
+	</div>
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>

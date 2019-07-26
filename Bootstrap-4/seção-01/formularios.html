@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Formularios</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style> 
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<div class="form-group">
+						<label for="InputEmail1">E-mail</label>
+						<input type="email" class="form-control" name="InputEmail1" id="InputEmail1" placeholder="Insira seu e-mail" aria-describedby="emailHelp">
+						<small id="emailHelp" class="form-text text-muted">Ex.: seuemail@seudominio.com.br</small>
+					</div>
+					<div class="form-group">
+						<label for="InputSenha1">Senha</label>
+						<input type="password" class="form-control" name="InputSenha1" id="InputSenha1" placeholder="Insira sua Senha" readonly> <!-- readonly - CAMPO SOMENTE LEITURA -->
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input" > Manter Conectado
+						</label>
+					</div>
+					<button class="btn btn-primary" type="submit">Enter</button>
+				</form>
+			</div>
+		</div>
+		<!-- DEFININDO O TAMANHO DOS INPUTS -->
+		<div class="row">
+			<div class="col-6">
+				<input class="form-control form-control-lg" type="text"></input> <!-- GRANDE -->
+				<input class="form-control form-control-sm" type="text"></input> <!-- PEQUENO -->
+				<input class="form-control" type="text"></input> <!-- NORMAL -->
+			</div>
+		</div>
+		<!-- DESABILITANDO O PREENCHIMENTO DO INPUT -->
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<div class="form-group row">
+						<label for="InputEmail2" class="col-sm-2 col-form-label">E-mail</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control-plaintext" name="InputEmail2" id="InputEmail2" placeholder="Insira seu e-mail" value="meuemail@meudominio.com.br">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="InputSenha2" class="col-sm-2 col-form-label">Senha</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control" name="InputSenha2" id="InputSenha2" placeholder="Insira sua Senha"> 
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- ADICIONANDO FORM A UMA GRID - NUM FORMATO DE COLUNAS -->
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="nome" class="col-form-label">Nome</label>
+							<input type="text" class="form-control" id="nome" name="nome" placeholder="Digite Seu Nome">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="sobrenome" class="col-form-label">Sobrenome</label>
+							<input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Digite Seu Sobrenome">
+						</div>
+					</div>
+					<div class="form-group">
+							<label for="end" class="col-form-label">Endereço</label>
+							<input type="text" class="form-control" id="end" name="end" placeholder="Digite Seu Endereço">						
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="cidade" class="col-form-label">Cidade</label>
+							<input type="text" class="form-control" id="cidade" name="cidade" placeholder="Digite Sua Cidade">
+						</div>
+						<div class="form-group col-md-4">
+							<label for="estado" class="col-form-label">Estado</label>
+							<input type="text" class="form-control" id="estado" name="estado" placeholder="Digite Seu Estado">
+						</div>
+						<div class="form-group col-md-e">
+							<label for="cep" class="col-form-label">CEP</label>
+							<input type="text" class="form-control" id="cep" name="cep" placeholder="Digite Seu CEP">
+						</div>
+					</div>
+					<button class="btn btn-primary">Cadastrar</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- FORMULÁRIO EM LINHA -->
+		<div class="row">
+			<div class="col-12">
+				<form class="form-inline">
+					<label class="sr-only" for="nameInline">Nome</label> <!-- NÃO SERÁ EXIBIDO EM TELA, SOMENTE USO DE TECNOLOGIAS ASSITIVAS -->
+					<input type="text" id="nameInine" placeholder="Digite Seu nome" class="form-control mb-2 mr-2">
+					<label class="sr-only" for="senhaInline">Senha</label> 
+					<input type="password" id="senhaInline" placeholder="Digite Sua senha" class="form-control mb-2 mr-2">
+					<button class="btn btn-primary">Entrar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>

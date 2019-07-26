@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Utilitários - Dimensionamento(Tamanho)</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style> 
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="p-3 mb-2 w-25 bg-primary"></div> <!-- w-25: 25% DE LARGURA -->
+				<div class="p-3 mb-2 w-50 bg-secondary"></div> <!-- w-50: 50% DE LARGURA -->
+				<div class="p-3 mb-2 w-75 bg-success"></div> <!-- w-75: 75% DE LARGURA -->
+				<div class="p-3 mb-2 w-100 bg-danger"></div>  <!-- w-100: 100% DE LARGURA -->
+				<div class="p-3 mb-2 mw-100 bg-danger"></div>  <!-- mw-100: MÁXIMO 100% DE LARGURA -->
+			</div>
+		</div>
+		<!-- AJUSTANDO O TAMANHO VERTICALMENTE -->
+		<div class="row">
+			<div class="col bg-warning" style="height: 300px;">
+				<div class="p-3 mb-2 h-25 d-inline-block bg-primary"></div> 
+				<!-- 
+					d-inline-block: DISPLAY EM LINHA 
+					h-25: 25% DE ALTURA
+				-->
+				<div class="p-3 mb-2 h-50 d-inline-block bg-secondary"></div> <!-- h-50: 50% DE ALTURA -->
+				<div class="p-3 mb-2 h-75 d-inline-block bg-success"></div> <!-- h-75: 75% DE ALTURA -->
+				<div class="p-3 mb-2 h-100 d-inline-block bg-danger"></div> <!-- h-100: 100% DE ALTURA -->
+				<div class="p-3 mb-2 mh-100 d-inline-block bg-danger"></div> <!-- mh-100: MÁXIMO 100% DE ALTURA -->
+			</div>
+		</div>
+	</div>
+
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>

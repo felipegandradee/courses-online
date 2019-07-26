@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            var salada = new Array();
+            salada[0] = "Uva";
+            salada[1] = "Mamão";
+            salada[2] = "Pêra";
+            salada[3] = "Maçã";       
+            salada.push("Abacate");
+            console.log(salada);
+
+            // ORDENANDO EM ORDEM ALFABÉTICA: A-Z
+            salada.sort();
+            console.log(salada);
+
+            var megasena = [43, 10, 3, 2, 1, 59];
+
+            // FUNÇÃO PARA ORDENAÇÃO DE NÚMEROS
+            function ordenarNumeros(a,b){
+                return a-b;
+            }
+                // ORDENANDO EM ORDEM CRESCENTE
+            megasena.sort(ordenarNumeros);
+            console.log(megasena);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

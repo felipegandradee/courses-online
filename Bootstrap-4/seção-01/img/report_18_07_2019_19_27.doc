@@ -1,0 +1,22 @@
+<!-- 			//comando para gerar a exportação do Word    -->
+	
+   <html
+
+	    xmlns:o='urn:schemas-microsoft-com:office:office'
+
+	    xmlns:w='urn:schemas-microsoft-com:office:word'
+
+	    xmlns='http://www.w3.org/TR/REC-html40'> 
+	    <head><title>Time</title>
+
+	</head>
+		<body>
+			<br />
+<b>Fatal error</b>:  Uncaught exception 'SmartyException' with message 'unable to write file C:\xampp\htdocs\cobaialink\gui\templates_c\0e4bcf28935ade536f7636768dd5579671dd6d06.file.generateWord.tpl.php' in C:\xampp\htdocs\cobaialink\third_party\smarty3\libs\sysplugins\smarty_internal_write_file.php:73
+Stack trace:
+#0 C:\xampp\htdocs\cobaialink\third_party\smarty3\libs\sysplugins\smarty_internal_template.php(201): Smarty_Internal_Write_File::writeFile('C:\\xampp\\htdocs...', '&lt;?php /* Smarty...', Object(TLSmarty))
+#1 C:\xampp\htdocs\cobaialink\third_party\smarty3\libs\sysplugins\smarty_internal_templatebase.php(164): Smarty_Internal_Template-&gt;compileTemplateSource()
+#2 C:\xampp\htdocs\cobaialink\third_party\smarty3\libs\sysplugins\smarty_internal_templatebase.php(374): Smarty_Internal_TemplateBase-&gt;fetch('results/generat...', NULL, NULL, NULL, true)
+#3 C:\xampp\htdocs\cobaialink\lib\results\generateWord.php(770): Smarty_Internal_TemplateBase-&gt;display('results/generat...')
+#4 {main}
+  thrown in <b>C:\xampp\htdocs\cobaialink\third_party\smarty3\libs\sysplugins\smarty_internal_write_file.php</b> on line <b>73</b><br />

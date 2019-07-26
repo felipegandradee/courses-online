@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de CSS</title>
+        <style type="text/css">
+            html {
+                background-color:#EFEFEF;
+            }
+
+            body{
+                /* DEIXANDO OS ELEMENTOS MAIS PRÓXIMO DO TOPO*/
+                margin: 0;
+            }
+
+            #principal {
+                /* CENTRALIZANDO */
+                width:630px;
+                margin:0 auto;
+
+                background-color:#9C3;
+
+                /* DETERMINANDO A DISTÂNCIA DO TEXTO COM O ELEMENTO */
+                padding: 10px;
+            }
+
+            #principal:after{
+                content: "";
+                display: table;
+                clear: both;
+                /*
+                clear both: Não permite que elementos flutuem ao seu lado esquerdo e direito.
+                display table: Deixa o elemento se comportar como um elemento <table>.
+                content: A propriedade content é usada com os pseudoelementos :: before e :: after, para inserir o conteúdo gerado. O after é um pseudo-elemento, usado para inserir algum conteúdo antes ou depois do elemento.
+                */
+            }
+
+            .janela {
+                width:300px;
+                background: #FC3;
+                padding: 5px;
+
+                /* JUNTANDO OS DOIS ELEMENTOS LADO A LADO */
+                float: left;
+                    /* APLICANDO UMA DISTÂNCIA ENTRE OS ELEMENTOS */
+                    margin-right: 5px;
+            }
+
+            p {
+                margin:0;
+            }
+        </style>
+    </head>
+<body>
+    <div id="principal">
+    	<div class="janela">
+	        <p>Cafe Townsend's visionary chef leads the way in a culinary revolution. Proclaimed by many to be the best chef in the world today, Chef Bienni blends earthy seasonal flavors and bold ingredients to create exquisite contemporary cuisine. </p>    
+        </div>
+        <div class="janela">
+            <p>Cafe Townsend's visionary chef leads the way in a culinary revolution. Proclaimed by many to be the best chef in the world today, Chef Bienni blends earthy seasonal flavors and bold ingredients to create exquisite contemporary cuisine. </p>    
+        </div>
+    </div>
+</body>
+</html>

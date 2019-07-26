@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            var agora = new Date();
+            var mesAtual = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+            console.log(agora.getFullYear());
+            console.log(mesAtual[agora.getMonth()]);
+            console.log(agora.getDate());
+            console.log(agora.getDate() + " de " + mesAtual[agora.getMonth()] + " de " + agora.getFullYear());
+
+            var diaSemana = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"];
+            var aniversario = new Date(1999, 6, 3);
+            console.log("Nasci no dia da semana: " + diaSemana[aniversario.getDay()]);
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Barra de Navegação</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+
+		body{
+			margin-bottom: 60px; /* PARA NAV BAR FIXA NO RODAPÉ
+			margin-top: 60px; /* PARA NAV BAR FIXA NO CABEÇALHO
+
+		}
+	</style> 
+</head>
+<body>
+		<!-- NAVBAR PERSONALIZADA -->
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar fixed-bottom navbar-light bg-light navbar-expand-lg" style="background-color: #e3f2fd; "> 
+					<!--  
+						fixed-top : FIXADA NO TOPO, MESMO DESCENDO A PÁGINA
+						fixed-bottom : FIXADA NO RODAPÉ
+					-->
+					<!-- LEVANDO O USUÁRIO A PÁGINA INICIAL COM O BRAND-->
+					 <a class="navbar-brand" href="#">
+						<img src="img/logo1.png" width="30" height="30" class="d-inline-block align-top" >
+						 PontoCOM
+					</a>
+					<!-- MENU DE ITENS OCULTOS -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1"
+					aria-controls="nav1" aria-expanded="false" aria-label="Navegação Toggle">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-between" id="nav1">
+						<ul class="navbar-nav">
+						    <li class="nav-item">
+						    	<a class="nav-link" href="#">Home</a>
+						    </li>
+						    <li class="nav-item">
+						    	<a class="nav-link" href="#">Clientes</a>
+						    </li>
+						    <li class="nav-item">
+						    	<a class="nav-link" href="#">Portfólio</a>
+						    </li>
+						    <!-- INSERINDO UM DROPDOWN -->
+						    <li class="nav-item dropdown">
+						    	<a class="nav-link dropdown-toggle" href="#" id="linkDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    		Blog
+						    	</a>
+						    	<div class="dropdown-menu" aria-labelledby="linkDrop">
+						    		<a href="#" class="dropdown-item">Novidades</a>
+						    		<a href="#" class="dropdown-item">Tenologia</a>
+						    		<a href="#" class="dropdown-item">Lançamentos</a>
+						    	</div>
+						    </li>
+						    <li class="nav-item">
+						    	<a class="nav-link" href="#">Contato</a>
+						    </li>
+						</ul>
+						<!-- FORMULÁRIO DE BUSCA NA NAV -->
+						<form class="form-inline">
+							<input class="form-control mr-sm-2" type="text" placeholder="Pesquisar..." aria-label="Pesquisar"></input>
+							 <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+						</form>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>

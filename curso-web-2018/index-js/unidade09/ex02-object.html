@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            var produto = new Object();
+            produto.nome = "Caneta";
+            produto.preco = 1.99;
+            produto.cor = "azul";
+
+            function retornarInfo(){
+                return "Meu produto é " + this.nome + ", custa R$" + this.preco + ". Sua cor é " + this.cor;
+            }
+
+            // ATRIBUINDO O MÉTODO PARA UMA PROPRIEDADE
+            produto.info = retornarInfo;
+            console.log(produto.info());
+            
+
+            // DE OUTRA FORMA
+            function retornarInfo(){
+                return "Meu produto é " + produto.nome + ", custa R$" + produto.preco + ". Sua cor é " + produto.cor;
+            }
+
+            console.log(retornarInfo());
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

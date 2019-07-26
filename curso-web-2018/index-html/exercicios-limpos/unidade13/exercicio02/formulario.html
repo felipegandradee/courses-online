@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso HTML5 Essencial</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+        <form action="destino.html" method="post">
+            <label for="nome">Nome Completo</label> 
+            <!-- 
+                ATRIBUTO FOR É USADO PARA REFERENCIARMOS QUAL ID DO CAMPO ESTAMOS NOS REFERINDO 
+            -->
+            <input type="text" name="nome" id="nome" size="30" maxlength="100"> 
+            <!-- 
+                ATRIBUTO ID É UTILIZADO PRINCIPALMENTE QUANDO QUEREMOS MANIPULAR O CAMPO VIA JAVASCRIPT.
+                SIZE É O TAMANHO DEFINIDO PARA AQUELE CAMPO.
+                MAXLENGTH É O ATRIBUTO PARA DEFINIR A QUANTIDADE MÁXIMA DE CARACTERES P/ CAMPO.
+            -->
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" id="telefone" size="30" maxlength="30">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" size="30" maxlength="60">
+            <input type="submit" name="enviar" value="Enviar" id="enviar">
+        </form>
+    
+    </body>
+</html>

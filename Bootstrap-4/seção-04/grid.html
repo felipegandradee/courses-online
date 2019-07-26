@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>GRID</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		/* CLASSE .BG DA DIV */
+		div.bg{
+			background-color: #563d7c;
+			height: 50px;
+			border: 1px solid #fff;
+		} 
+		div.bg1{
+			background-color: #ffe484;
+			height: 50px;
+			border: 1px solid #fff;
+		} 
+	</style> 
+</head>
+<body>
+	<!-- CONTAINER NORMAL -->
+	<div class="container">
+		<!-- INSERINDO AS COLUNAS -->
+		<div class="row">
+			<div class="col bg"> <!-- 'bg' é a classe criada no <style> -->
+				
+			</div>
+			<div class="col bg"> 
+				
+			</div>
+			<div class="col bg"> 
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-1 bg"> <!-- '-1' é o tamanho da coluna(em quantidades) no Bootstrap, para sabermos a sua largura, clicamos em inspecionar Elemento nesta coluna -->
+				
+			</div>
+			<div class="col bg"> 
+				
+			</div>
+			<div class="col bg"> 
+				
+			</div>
+			<div class="col bg"> 
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="row justify-content-center"> <!-- ALINHANDO AO CENTRO -->
+			<div class="col-1 bg">
+				
+			</div>
+			<div class="col-6 bg"> 
+				
+			</div>
+			<div class="col-2 bg"> 
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="row justify-content-end"> <!-- ALINHANDO A DIREITA -->
+			<div class="col-1 bg">
+				
+			</div>
+			<div class="col-6 bg"> 
+				
+			</div>
+			<div class="col-2 bg"> 
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="row"> <!-- -->
+			<div class="col-xl-4 col-sm-12 col-lg-3 bg1"> 
+				<!-- '-xl-4' OCUPA ESTA QTDE DE COLUNAS EM DISPOSITIVOS GRANDES(>1200px largura) 
+					 '-sm-12' OCUPA ESTA QTDE DE COLUNAS EM DISPOSITIVOS MENORES(<1200px largura) 
+					 'col-lg-3' OCUPA ESTA QTDE DE COLUNAS EM DISPOSITIVOS DE >992px LARGURA 
+				-->
+				
+			</div>
+			<div class="col-xl-4 col-6 col-sm-12 bg1"> 
+				
+			</div>
+			<div class="col-xl-4 col-2 col-sm-12 bg1"> 
+				
+			</div>
+		</div>
+	</div>
+<!-- SISTEMA DE RENDERIZAÇÃO DE ORDEM VISUAL -->
+	<div class="row"> 
+			<div class="col bg order-3"> <!-- 'order-valor' DEFINE A ORDEM QUE APARECERÁ A COLUNA, PODENDO VARIAR DE 1 A 12. -->
+				<h1>Primeiro Item</h1>
+			</div>
+			<div class="col bg order-2"> 
+				<h1>Segundo Item</h1>
+			</div>
+			<div class="col bg order-1"> 
+				<h1>Terceiro Item</h1>
+			</div>
+		</div>
+
+
+
+		<div class="row"> 
+			<div class="col-4 bg1"> 
+				
+			</div>
+			<div class="col-4 offset-4 bg1"> 
+				
+			</div>
+		</div>
+	</div>
+
+
+<br><br><br><br> 
+
+		<!-- CONTAINER FLUID -->
+	<div class="container-fluid">
+		<!-- INSERINDO AS COLUNAS -->
+		<div class="row">
+			<div class="col bg"> <!-- 'bg' é a classe criada no <style> -->
+				
+			</div>
+			<div class="col bg"> 
+				
+			</div>
+			<div class="col bg"> 
+				
+			</div>
+			<div class="col bg"> 
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>

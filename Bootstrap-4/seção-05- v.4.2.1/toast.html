@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Novos Componentes incluídos no Bootstrap 4.2 - Toast</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style> 
+</head>
+<body>
+	<!-- TOAST POSICIONADO A DIREITA -->
+	<div style="position: relative; min-height: 200px;">
+		<div style="position: absolute;top: 0;right: 0;">
+			<div class="toast" role="alert" data-autohide="false" >
+			<div class="toat-header">
+				<img src="img/logo1.png" class="rouded mr-2">
+				<strong class="mr-auto">PontoCom Desenvolvimento</strong>
+				<small class="text-muted">15 minutos</small>
+				<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Fechar">
+					<span aria-hidden="true">&times;</span> <!-- ÍCONE DE FECHAR -->
+				</button>
+			</div>
+			<div class="toast-body">Olá! Seja bem vindo ao meu Sistema...</div>
+		</div>
+		</div>
+
+	    <!-- TOAST POSICIONADO A ESQUERDA -->
+		<div class="toast" role="alert" data-delay="5000" data-autohide="false">  
+			<!-- 
+				data-delay="5000": TEMPO QUE FICARÁ VISIVEL 
+				data-autohide="false": QUANDO NÃO DESEJA QUE O TOAST SAIA AUTOMATICAMENTE
+			-->
+			<div class="toat-header">
+				<img src="img/logo1.png" class="rouded mr-2">
+				<strong class="mr-auto">PontoCom Desenvolvimento</strong>
+				<small class="text-muted">15 minutos</small>
+				<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Fechar">
+					<span aria-hidden="true">&times;</span> <!-- ÍCONE DE FECHAR -->
+				</button>
+			</div>
+			<div class="toast-body">Olá! Seja bem vindo ao meu Sistema...</div>
+		</div>
+	</div>
+
+	<!-- TOAST POSICIONADO AO CENTRO -->
+	<div style="position: relative; min-height: 200px;" class="d-flex justify-content-center align-items-center">
+		<div class="toast" role="alert" data-autohide="false" >
+			<div class="toat-header">
+				<img src="img/logo1.png" class="rouded mr-2">
+				<strong class="mr-auto">PontoCom Desenvolvimento</strong>
+				<small class="text-muted">15 minutos</small>
+				<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Fechar">
+					<span aria-hidden="true">&times;</span> <!-- ÍCONE DE FECHAR -->
+				</button>
+			</div>
+			<div class="toast-body">Olá! Seja bem vindo ao meu Sistema...</div>
+		</div>
+	</div>
+
+	<!-- BOTÃO PARA CHAMAR TOAST -->
+	<div class="container">
+		<button class="btn btn-primary" id="btnToast" type="button">Chamar Toast</button>
+	</div>
+
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+	<!-- INICIALIZANDO O TOAST - ABRIR QUANDO RECARREGAR A PÁGINA -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.toast').toast('show'); // white - ESCONDIDO; dispose - PRONTO PRA SER EXECUTADO MAS NÃO APARECENDO; show - MOSTRAR
+		});
+	</script>
+
+	<!-- INICIALIZANDO O TOAST - ABRIR QUANDO CLICAR NO BOTÃO -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#btnToast').click(function(){
+				$('.toast').toast('show');
+			});
+		});
+
+	</script>
+</body>
+</html>

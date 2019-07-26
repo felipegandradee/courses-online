@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Modal</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style> 
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- DISPARADOR -->
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo1" >Disparador do meu modal</button>
+				<!-- MODAL PARA SEMPRE FICAR EXIBINDO -->
+				<div id="modalExemplo1" class="modal fade">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Título do meu modal</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Corpo do meu modal</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Salvar Alterações</button>
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- MODAL COM TAMANHO PERSONALIZADO -->
+		<div class="row">
+			<div class="col-12">
+				<!-- DISPARADOR -->
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo2" >Disparador do meu modal grande</button>
+				<!-- MODAL PARA SEMPRE FICAR EXIBINDO -->
+				<div id="modalExemplo2" class="modal fade">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Título do meu modal grande</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Corpo do meu modal</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Salvar Alterações</button>
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<!-- DISPARADOR -->
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo3" >Disparador do meu modal pequeno</button>
+				<!-- MODAL PARA SEMPRE FICAR EXIBINDO -->
+				<div id="modalExemplo3" class="modal fade">
+					<div class="modal-dialog modal-sm" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Título do meu modal pequeno</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Corpo do meu modal</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Salvar Alterações</button>
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+	<!-- FAZENDO COM QUE O MODAL SEMPRE FIQUE VISÍVEL -->
+	<script type="text/javascript">
+		$('.modal').modal('show')
+	</script>
+
+</body>
+</html>

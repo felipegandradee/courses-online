@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Navegação</title>
+	<!-- TAGS NECESSÁRIAS PARA BOOTSTRAP -->
+	<meta charset="utf-8"> <!-- CODIFICAÇÃO PADRÃO -->
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no"> 
+	<!-- IMPORTAÇÃO DOS ARQUIVOS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style> 
+</head>
+<body>
+	
+	<div class="container">
+		<!-- NAV NUMA LISTA NÃO ORDENADA -->
+		<div class="row">
+			<div class="col-12">
+				<ul class="nav justify-content-center"> <!-- ALINHADO AO CENTRO -->
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Link 1</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Link 2</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Link 3</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link disabled">Link 4</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- NAV NUMA TAG NAV -->
+		<div class="row">
+			<div class="col-12">
+				<nav class="nav justify-content-end"> <!-- ALINHADO A DIREITA -->
+					<a href="#" class="nav-link active">Link 1</a>
+					<a href="#" class="nav-link">Link 2</a>
+					<a href="#" class="nav-link">Link 3</a>
+					<a href="#" class="nav-link disabled">Link 4</a>
+				</nav>
+			</div>
+		</div>
+		<!-- NAV NUMA TAG NAV (VERTICALMENTE) -->
+		<div class="row">
+			<div class="col-12">
+				<nav class="nav flex-column"> <!-- VERTICALMENTE -->
+					<a href="#" class="nav-link active">Link 1</a>
+					<a href="#" class="nav-link">Link 2</a>
+					<a href="#" class="nav-link">Link 3</a>
+					<a href="#" class="nav-link disabled">Link 4</a>
+				</nav>
+			</div>
+		</div>
+		<!-- NAV NUMA TAG NAV (EXIBIDAS COMO ABAS) -->
+		<div class="row">
+			<div class="col-12">
+				<nav class="nav nav-tabs"> <!-- ABAS -->
+					<a href="#" class="nav-link active">Link 1</a>
+					<a href="#" class="nav-link">Link 2</a>
+					<a href="#" class="nav-link">Link 3</a>
+					<a href="#" class="nav-link disabled">Link 4</a>
+				</nav>
+			</div>
+		</div>
+		<!-- NAV NUMA TAG NAV (EXIBIDAS COMO PILLS) -->
+		<div class="row">
+			<div class="col-12">
+				<nav class="nav nav-pills"> <!-- PILLS -->
+					<a href="#" class="nav-link active">Link 1</a>
+					<a href="#" class="nav-link">Link 2</a>
+					<a href="#" class="nav-link">Link 3</a>
+					<a href="#" class="nav-link disabled">Link 4</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<!-- PRIMEIRO A IMPORTAÇÃO DO JQUERY, SEGUIDO DO POPPER E POR FIM DO BOOTSTRAP -->
+	<script src="js/jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+
+</body>
+</html>

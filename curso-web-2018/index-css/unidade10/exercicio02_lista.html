@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de CSS</title>
+        <style>
+            body {
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size:14px;
+            }
+
+            /* FORMATANDO O PRIMEIRO ITEM DA LISTA */
+            li:first-child{
+                color: aqua;
+            }
+
+            /* FORMATANDO O ÚLTIMO ITEM DA LISTA */
+            li:last-child{
+                color: aquamarine;
+            }
+
+            /* DETERMINANDO A POSIÇÃO DO ELEMENTO QUE DESEJA FORMATAR */
+            li:nth-child(3){
+                color: blueviolet;
+            }
+
+            /* FORMATANDO PELOS ELEMENTOS ÍMPARES */
+            li:nth-child(odd){
+                color: red;
+            }
+
+            /* FORMATANDO PELOS ELEMENTOS PARES */
+            li:nth-child(even){
+                color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Brasil</li>
+            <li>Portugal</li>
+            <li>Angola</li>
+            <li>Moçambique</li>
+            <li>Cabo Verde</li>
+        </ul>  
+    </body>
+</html>
