@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Atividade Fixação Conteúdo</title>
+	<meta charset="utf-8">
+	<script>
+		var idade = prompt('Digite sua idade:');
+		parseInt(idade);
+		var faixaEtaria;
+
+		if (idade >= 0 && idade < 15) {
+			faixaEtaria = 'Criança';
+		} else if(idade >= 15 && idade < 30){
+			faixaEtaria = 'Jovem';
+		} else if(idade >= 30 && idade < 60){
+			faixaEtaria = 'Adulto';
+		} else if(idade >= 60){
+			faixaEtaria = 'Idoso';
+		}else{
+			faixaEtaria = 'idade inválida';
+		}
+
+		document.write(faixaEtaria);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
