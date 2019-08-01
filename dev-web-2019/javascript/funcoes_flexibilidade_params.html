@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Funções Fexibilidade de Parâmetros</title>
+	<meta charset="utf-8">
+	<script>		
+		function soma(a,b,c){
+			return a + b + c;
+		}
+		console.log(soma(7,7,9,15));
+		
+		function soma2(a,b){
+			return a + b;
+		}
+		console.log(soma2(7)); // SEGUNDO VALOR DO PARÂMETRO FICARÁ COMO UNDEFINED(NaN - Not a Number)
+		console.log(soma2()); // DOIS VALORES DOS PARÂMETROS FICARÃO COMO UNDEFINED(NaN - Not a Number)
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

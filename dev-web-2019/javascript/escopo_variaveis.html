@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript -Escopo de Variáveis</title>
+	<meta charset="utf-8">
+	<script>		
+		// GLOBAL
+		var serie = 'Friends';
+		
+			// USANDO A VARIAVEL GLOBAL DENTRO DE UM BLOCO
+			if(true){
+				document.write(serie);
+			}
+
+			// USANDO A VARIAVEL GLOBAL DENTRO DE UMA FUNÇÃO
+			function x(){
+				document.write(serie);
+			}
+			x(); // CHAMANDO A FUNÇÃO
+
+		// BLOCO
+		if(true){
+			var serie2 = 'Game of Thrones'; // 'var' REALIZA UMA ELEVAÇÃO DE BLOCO, TORNANADO A VARIÁVEL DECLARADA NO BLOCO COMO GLOBAL
+		}
+		
+			// USANDO A VARIAVEL EM BLOCO COMO FORMA GLOBAL
+			document.write(serie2);
+
+			// USANDO A VARIAVEL EM BLOCO DENTRO DE UMA FUNÇÃO
+			function y(){
+				document.write(serie2);
+			}
+			y();
+
+		// FUNÇÃO
+		function z(){
+			var serie3 = 'The Walking Dead'; // VARIÁVEL DECLARADA SOMENTE DISPONÍVEL PARA SER ACESSADA AQUI DENTRO
+			document.write(serie3);
+		}
+		z();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
