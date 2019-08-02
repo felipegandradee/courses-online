@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Funções Datas</title>
+	<meta charset="utf-8">
+	<script>
+		var data = new Date();
+
+		document.write(data.getDate()); // DIA DO MÊS ATUAL
+		document.write(data.getMonth() + 1); //  MÊS ATUAL - DE 0 A 11
+		document.write(data.getFullYear()); //  ANO ATUAL
+
+		document.write('<br>');
+		document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear());
+		document.write('<br>');
+
+		// ADICIONAR / REMOVER DIAS DA DATA ATUAL
+		document.write(data.toString()); //CONVERTENDO EM STRING 
+		document.write('<br>');	 	
+		data.setDate(data.getDate() + 7); // ADICIONANDO 7 DIAS 	 	
+		document.write(data.toString());  
+		document.write('<br>');	 	
+		data.setDate(data.getDate() - 5); // REMOVENDO 5 DIAS 	 	
+		document.write(data.toString());  
+		document.write('<hr>');	 	
+
+		// ADICIONAR / REMOVER MESES DA DATA ATUAL
+		data.setMonth(data.getMonth() + 3); // ADICIONANDO 3 MESES 	 	
+		document.write(data.toString());  
+		document.write('<br>');	 	
+		data.setMonth(data.getMonth() - 4); // REMOVENDO 4 MESES 	 	
+		document.write(data.toString());  
+		document.write('<hr>');	
+
+
+		// ADICIONAR / REMOVER ANOS DA DATA ATUAL
+		data.setFullYear(data.getFullYear() + 2); // ADICIONANDO 2 ANOS 	 	
+		document.write(data.toString());  
+		document.write('<br>');	 	
+		data.setFullYear(data.getFullYear() - 5); // REMOVENDO 5 ANOS 	 	
+		document.write(data.toString());  
+		document.write('<hr>');	
+
+		// CÁLCULO ENTRE DATAS DIFERENTES
+		var data1 = new Date(2017, 0, 15);
+		var data2 = new Date(2017, 1, 23);
+
+		document.write(data1.toString());  
+		document.write('<br>');	 
+		document.write(data2.toString());  
+		document.write('<br>');	 
+
+		// CONVERTER DATAS PARA ALGO QUE POSSAMOS CALCULAR: GETTIME() - PEGANDO OS VALORES DE 1 DE JANEIRO DE 1970 ATÉ O MOMENTO DA DATA PASSADA, EXIBINDO EM MILISSEGUNDOS
+		document.write('<hr>');	
+		document.write(data1.getTime());  
+		document.write('<br>');	 
+		document.write(data2.getTime());
+		document.write('<hr>');	
+
+		// ENCONTRAR A QTDE DE MILISSEGUNDOS ENTRE AS DUAS DATAS
+		var milissegundosDatas = Math.abs(data1.getTime() - data2.getTime());
+		document.write(milissegundosDatas); 
+		// OU document.write(data2.getTime() - data1.getTime());
+		document.write('<hr>');			
+
+		// CONVERTENDO 1 DIA PARA MILISSEGUNDOS
+		var milissegundosDia = 1*24*60*60*1000;
+		document.write('1 dia tem: ' + milissegundosDia + ' milissegundos');
+		document.write('<hr>');
+
+		// TRANSFORMANDO MILISSEGUNDOS DA DIFERENÇA ENTRE AS DATAS EM DIAS
+		var difDiasDatas = Math.ceil(milissegundosDatas / milissegundosDia);
+		document.write('A diferença entre as datas é ' + difDiasDatas + ' dias');			 	
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

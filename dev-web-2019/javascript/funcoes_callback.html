@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Funções Callback</title>
+	<meta charset="utf-8">
+	<script>
+		function exibirArtigo(id, callbackSucesso, callbackErro){
+			// LÓGICA: RECUPERAR O ID VIA REQUISIÇÃO HTTTP
+			if(true){
+				// EXECUÇÃO DA FUNÇÃO CALLBACK
+				callbackSucesso('Funções de callback em JS', 'Funções de callback são muito utilizadas... ');
+			} else {
+				// EXECUÇÃO DA FUNÇÃO CALLBACK
+				callbackErro('Erro ao recuperar os dados');
+			}
+		}
+
+		// USANDO A TÉCNICA WRAPPER PARA FUNÇÕES CALLBACK
+		var callbackSucesso = function(titulo, descricao){
+			document.write('<h1>' + titulo + '</h1>');
+			document.write('<hr/>');
+			document.write('<p>' + descricao + '</p>');
+		};
+
+		var callbackErro = function(erro){
+			document.write('<p><b>Erro: </b>' + erro + '</p>');
+		};
+
+		// CHAMAR FUNÇÃO ENCAMINHANDO AS FUNÇÕES DE CALLBACK DENTRO DELA
+		exibirArtigo(1, callbackSucesso, callbackErro );
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+</html>

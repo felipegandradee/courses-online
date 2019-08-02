@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Funções Strings</title>
+	<meta charset="utf-8">
+	<script>
+		// PROPRIEDADE LENGTH - TAMANHO DE CARACTERES
+		document.write('Felipe Andrade'.length);
+
+		// RETORNANDO UM VALOR DE UM ÍNDICE PASSADO ATRAVÉS DO CHARAT(index)
+		document.write('Felipe Andrade'.charAt(7));
+
+		//INDEXOF(valor) - RETORNANDO A POSIÇÃO DA PRIMEIRA OCORRÊNCIA DO VALOR PASSADO NO PARÂMETRO, FAZENDO DIFERENCIAÇÃO DE MAIÚSCULAS E MINÚSCULAS, RETORNANDO -1 AO VALOR QUE NÃO FOR ENCONTRADO
+		var nome = ' Felipe Andrade   ';
+		document.write(nome.indexOf('e'));
+
+		//SUBSTITUÇÃO DE TEXTOS COM REPLACE(TEXTO,SUBSTITUTIVO)
+		document.write(nome.replace('Andrade', 'Gonçalves'));
+
+		// RECORTANDO UMA PARTE DA STRING COM SUBSTR(INICIO,QTDE_CARACTERES)
+		document.write(nome.substr(8,7));
+
+		// MANIPULANDO MAIÚSCULOS E MINÚSCULOS
+		document.write(nome.toUpperCase()); // MAIÚSCULO
+		document.write(nome.toLowerCase()); // MINÚSCULO
+
+		// REMOVENDO OS ESPAÇOS EXISTENTES NAS EXTREMIDADES(INÍCIO E FIM) DA STRING COM TRIM()
+		document.write(nome.trim());
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
