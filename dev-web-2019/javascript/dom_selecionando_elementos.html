@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript - DOM : Selecionando Elementos</title>
+		<meta charset="utf-8">
+
+	</head>
+	<body>
+		<input type="text" name="nome" class="campo_texto" id="nome_usuario" placeholder="digite seu nome">
+	</body>
+	<script>
+		console.log(document.getElementById('nome_usuario'));
+		console.log(document.getElementsByTagName('input'));
+		console.log(document.getElementsByClassName('campo_texto'));
+		console.log(document.getElementsByName('nome')); // retorno nodelist
+
+	</script>
+</html>

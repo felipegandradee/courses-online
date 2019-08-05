@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript - DOM : Manipulando Valores dos Inputs Text</title>
+		<meta charset="utf-8">
+		<script>
+			function distribuiCaracter()
+			{
+				// SELECIONAR O VALOR DIGITADO
+				var caracter = document.getElementById('entrada').value; // .value : RECUPERA O VALORE CONTIDO DENTRO DO ELEMENTO EM FORMATO DE STRING
+
+				// LIMPAR O CAMPO DE DIGITAÇÃO
+				document.getElementById('entrada').value = '';
+
+				// LIMPAR ESPAÇOS EM BRANCO NAS EXTREMIDADES DA STRING
+				caracter.trim();
+
+				// VERIFICANDO QUAL TIPO DE CARACTER : NÚMERO OU STRING
+				switch(caracter)
+				{
+					case '0':
+					case '1':
+					case '2':
+					case '3':
+					case '4':
+					case '5':
+					case '6':
+					case '7':
+					case '8':
+					case '9':
+						// ADICIONAR O CARACTER NO CAMPO REFERENTE A NÚMEROS
+						document.getElementById('apenas_numeros').value += caracter // ATRIBUINDO VALOR PARA AQUELE CAMPO
+						break;
+					default:
+						// ADICIONAR O CARACTER NO CAMPO REFERENTE A LETRAS
+						document.getElementById('apenas_letras').value += caracter
+				}
+
+				console.log(caracter)
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="entrada" placeholder="Digite um caracter aqui" onkeyup="distribuiCaracter()" />
+
+		<hr/>
+
+		<span>Letras:</span>
+		<input type="text" id="apenas_letras" disabled="disabled" />
+		<span>Números:</span>
+		<input type="text" id="apenas_numeros" disabled="disabled" />
+	</body>
+</html>

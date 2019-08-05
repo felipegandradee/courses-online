@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Eventos : Mouse</title>
+	<meta charset="utf-8">
+	<script>
+		function acao(){
+			alert('Evento disparado')
+		}
+		function acao2(){
+			alert('Elemento foi clicado')
+		}
+		function acao3(){
+			alert('O cursor do mouse deixou a região do elemento')
+		}
+
+	</script>
+</head>
+<body>
+	<div onclick="alert('Teste')" style="background: #ccc; height: 150px; width: 150px">onclick</div><br><br>
+	<div ondblclick="alert('Teste')" style="background: #ccc; height: 150px; width: 150px">ondblclick</div> <br><br>
+	<!-- DISPARANDO FUNÇÕES NO EVENTO -->
+	<div onclick="acao()" style="background: #ccc; height: 150px; width: 150px">onclick</div> <br><br>
+	<div onmouseup="acao()" style="background: #ccc; height: 150px; width: 150px">onmouseup</div> <br><br>
+	<div onmouseover="acao()" style="background: #ccc; height: 150px; width: 150px">onmouseover</div> <br><br>
+	<div onmouseout="acao()" style="background: #ccc; height: 150px; width: 150px">onmouseout</div> <br><br>
+	<!-- DISPARANDO MAIS DE UM EVENTO EM UM ELEMENTO -->
+	<div onclick="acao2()" onmouseout="acao3()" style="background: #ccc; height: 150px; width: 150px"></div> <br><br>
+</body>
+</html>
+

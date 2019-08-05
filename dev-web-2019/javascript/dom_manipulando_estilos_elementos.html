@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - DOM : Manipulando Estilos de Elementos</title>
+	<meta charset="utf-8">
+	<script>
+		function modificaEstilo(corDeFundo, l, a){
+			//alert(corDeFundo);
+			document.getElementById('quadrado').style.backgroundColor = corDeFundo // .style : PERMITE ALTERAR AS CARACTERÍSTICAS CSS DO ATRIBUTO STYLE.
+			// PARA AS CARACTERÍSTICAS QUE HOUVEREM, POR EXEMPLO BACKGROUND-IMAGE, DIGITAMOS backgroundImage (PADRÃO CAMEL CASE)
+			document.getElementById('quadrado').style.width = l
+			document.getElementById('quadrado').style.height = a
+		}
+
+	</script>
+</head>
+<body>
+	<h3>Manipulando estilos</h3>
+
+	<button type="button" onclick="modificaEstilo('#FF0000', '200px')">Vermelho</button>
+	<button type="button" onclick="modificaEstilo('#00FF00', '150px', '20px')">Verde</button>
+	<button type="button" onclick="modificaEstilo('#0000FF', '150px', '200px')">Azul</button>
+
+	<hr/>
+	
+	<div style="border: solid 1px #000; width: 100px; height: 100px" id="quadrado"></div>
+</body>
+</html>
+
