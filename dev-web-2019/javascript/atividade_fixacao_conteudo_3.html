@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Atividade Fixação Conteúdo: efetuar cálculos aritméticos de soma e subtração </title>
+	<meta charset="utf-8">
+	<script>
+		function executeCalc(num1,num2,operator){
+			var result;
+			switch(operator){
+				case 'soma':
+					result = num1 + num2;
+					break;
+				case 'subtração':
+					result = num1 - num2;
+					break;
+				default:
+					result = "Operação Inválida";
+			}
+			return "O resultado é : " + result;
+		}
+
+		var num1 = prompt('Digite um número');
+		var num2 = prompt('Digite outro número');
+		var operator = prompt('Digite uma das operações desejadas(soma, subtração):');
+
+		num1 = parseInt(num1);
+		num2 = parseInt(num2);
+
+		document.write(executeCalc(num1,num2, operator));
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
