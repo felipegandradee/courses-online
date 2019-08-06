@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Array: Básico</title>
+	<meta charset="utf-8">
+	<script>
+		/* FORMAS DE CRIAR ARRAY QUE PERMITEM MANIPULÁ-LOS */
+		var lista_frutas = Array(); // var lista_frutas = []
+
+		lista_frutas[1] = 'Banana';
+		lista_frutas[2] = 'Maçã';
+		lista_frutas[3] = 'Morango';
+		lista_frutas[4] = 'Uva';
+		lista_frutas['x'] = 'Acabate';
+		lista_frutas['z'] = true;
+		lista_frutas['a'] = 100;
+
+		console.log(lista_frutas);
+		console.log(lista_frutas[2]);
+		console.log(lista_frutas['x']);
+
+		/* FORMAS DE CRIAR ARRAY SEM PODER MANIPULÁ-LOS */
+		var lista_verduras = Array('Cenoura', 'Pepino', 'Tomate', 'Cebola'); // ÍNDICE SERÁ NUMÉRICO, COMEÇANDO POR 0
+		var lista_doces = ['Caramelo', 'Bala', 'Pirulito'];
+
+		console.log(lista_verduras);
+		console.log(lista_doces);
+	</script>
+</head>
+<body>	
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Atividade Fixação Conteúdo: Crie um campo input type="text" e aplique os eventos </title>
+	<meta charset="utf-8">
+	<script>
+		function modificaBackground(corDeFundo){
+			document.getElementById('atividade').style.backgroundColor = corDeFundo ;
+		}
+
+		function setDefaultBackground(){
+			document.getElementById('atividade').style.backgroundColor = '#FFF';
+			verificaCaracter();
+		}
+
+		function verificaCaracter(){
+			var qtdCaractere = document.getElementById('atividade').value;
+			if(qtdCaractere.length < 3 && qtdCaractere.length > 0){
+				document.getElementById('atividade').style.backgroundColor = '#FF0000';
+			} else if(qtdCaractere.length >= 3){
+				document.getElementById('atividade').style.backgroundColor = '#00FF60';
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="atividade" onfocus="modificaBackground('#FEEC18')" onblur="setDefaultBackground()">
+</body>
+</html>
