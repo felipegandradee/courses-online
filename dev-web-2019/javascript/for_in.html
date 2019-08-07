@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - For In</title>
+	<meta charset="utf-8">
+	<script>		
+		var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria'];
+
+		console.log(listaConvidados);
+
+		for(var x in listaConvidados){
+			console.log('Índice: ' + x + ' valor: ' + listaConvidados[x]); // RETORNA O VALOR DE CADA ELEMENTO
+		}
+
+		var nomes = [];
+
+		nomes['a'] = 'Jorge';
+		nomes[10] = 'Jamilton';
+		nomes['zebra'] = 'José';
+		nomes[-1] = 'Ana';
+		nomes[true] = 'Maria';
+
+		console.log(nomes);
+
+		for(var x in nomes){
+			console.log('Índice: ' + x + ' valor: ' + nomes[x]);
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+

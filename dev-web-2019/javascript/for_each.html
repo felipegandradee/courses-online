@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - ForEach</title>
+	<meta charset="utf-8">
+	<script>
+		var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda'];
+
+		console.log(listaFuncionarios);
+
+		listaFuncionarios.forEach(function(value,index, array){
+		  // LÓGICA PARA CADA UM DOS INDICES DO ARRAY
+		  console.log('indice: ' + index + ' | valor: ' + value);
+
+		  // MUDANDO NOME DE UM ELEMENTO
+		  if (value == 'Lucas') {
+		  	array[index] = 'Um novo valor';
+		  }
+
+		});
+		console.log(listaFuncionarios);
+
+		// USANDO TÉCNICA WRAPPER PARA REALIZAR O FOREACH
+		var listaEstudantes = ['Felipe', 'Camila', 'Raquel', 'Bruno', 'Mateus'];
+		var f = function(value, index){
+			console.log(value, index);
+		};
+
+		listaEstudantes.forEach(f);
+
+		// NÃO USAR DA MANEIRA ABAIXO
+		var nomes = [];
+
+		nomes['a'] = 'Jorge';
+		nomes[10] = 'Jamilton';
+		nomes['zebra'] = 'José';
+		nomes[-1] = 'Ana';
+		nomes[true] = 'Maria';
+
+		nomes.forEach(f);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+

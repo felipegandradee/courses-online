@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Array: Incluir e Remover</title>
+	<meta charset="utf-8">
+	<script>
+		// REMOVENDO DE ARRAYS DE UMA DIMENSÃO
+			var lista_frutas = Array();
+
+			lista_frutas[0] = 'Banana';
+			lista_frutas[1] = 'Maçã';
+
+			console.log(lista_frutas);
+
+			// INCLUINDO ELEMENTOS
+			lista_frutas.push('Uva'); // NO FINAL DO ARRAY
+			lista_frutas.unshift('Goiava'); // NO INÍCIO DO ARRAY
+
+			console.log(lista_frutas);
+
+			// REMOVENDO ELEMENTOS
+			lista_frutas.pop(); // NO FINAL DO ARRAY
+			lista_frutas.shift(); // NO INÍCIO DO ARRAY
+
+			console.log(lista_frutas);
+
+		// REMOVENDO DE ARRAYS MULTIDIMENSIONAIS
+			var lista_coisas = Array();
+
+			lista_coisas['verduras'] = Array();
+			lista_coisas['doces'] = [];
+
+			console.log(lista_coisas);
+
+			// INCLUINDO ELEMENTOS
+			lista_coisas['verduras'].push('Tomate'); // NO FINAL DO ARRAY
+			lista_coisas['doces'].unshift('Goiabada'); // NO INÍCIO DO ARRAY
+
+			console.log(lista_coisas);
+
+			// REMOVENDO ELEMENTOS
+			lista_coisas['verduras'].pop(); // NO FINAL DO ARRAY
+			lista_coisas['doces'].shift(); // NO INÍCIO DO ARRAY
+
+			console.log(lista_coisas);
+	</script>
+</head>
+<body>	
+</body>
+</html>
+

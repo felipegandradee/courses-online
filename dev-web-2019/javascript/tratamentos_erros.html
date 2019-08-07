@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Tratamento de erros com try, catch, throw e finally</title>
+	<meta charset="utf-8">
+	<script>
+		var video = Array();
+
+		video[1] = Array();
+		video[1]['nome'] = 'Fullmental Alchemist';
+		video[1]['categoria'] = 'Anime';
+
+		function getVideo(video) {
+			try{
+				console.log(video[0]['nome']);
+			} catch(erro){
+				console.log(erro);
+				console.log('Agora sim podemos tratar esse erro');
+				// EXEÇÃO PERSONALIZADA
+				throw new Error("Houve um erro mas não se preocupe, estamos trabalhando");
+			} finally{
+				console.log('Sempre passa por aqui(try/cath');
+			}
+			console.log('Aplicação não morreu')
+		}
+
+		function tratarErro(e){
+			console.log(e);
+		}
+		getVideo(video);
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+

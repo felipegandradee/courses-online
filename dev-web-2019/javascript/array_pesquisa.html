@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Array: Pesquisa</title>
+	<meta charset="utf-8">
+	<script>
+			var lista_frutas = Array();
+
+			lista_frutas[0] = 'Banana';
+			lista_frutas[1] = 'Maçã';
+			lista_frutas[2] = 'Morango';
+			lista_frutas[3] = 'Uva';
+
+			console.log(lista_frutas.indexOf('Morango'));
+			console.log(lista_frutas.indexOf('Abacate'));
+
+			var pesquisa = lista_frutas.indexOf('Uva');
+
+			if (pesquisa === -1) {
+				console.log('Elemento inexistente');
+			} else{
+				console.log('Eleemento existe e está na posição ' + pesquisa );
+			}
+	</script>
+</head>
+<body>	
+</body>
+</html>
+

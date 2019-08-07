@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Atividade Fixação Conteúdo: campo para entrada de texto (input text) e dois
+botões (buttons), sendo um botão com a descrição "Adicionar" e outro com a descrição
+"Ordenar"</title>
+	<meta charset="utf-8">
+	<script>
+		var objetos = Array('Cadeira', 'Impressora', 'Garfo');
+
+		function getText(){
+			var text = document.getElementById('text').value;
+			if(text.length === 0){
+				alert('Informe um valor válido');
+			} else{
+
+				if(objetos.indexOf(text) !== -1){
+					alert('Objeto já foi adicionado');
+				} else{
+					objetos.push(text);
+					console.log(objetos);
+					document.getElementById('text').value = '';
+				}
+			}
+		}
+
+		function sortArray(){
+			objetos = objetos.sort();
+			console.log(objetos);
+		}
+	</script>
+</head>
+<body>
+	<input id="text" type="text">
+	<button type="button" onclick="getText()">Adicionar</button>
+	<button  type="button" onclick="sortArray()">Ordenar</button>
+</body>
+</html>
+

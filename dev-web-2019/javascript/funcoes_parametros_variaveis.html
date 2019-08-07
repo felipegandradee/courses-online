@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript -Funções - Trabalhando com parâmetros variáveis</title>
+	<meta charset="utf-8">
+	<script>
+		function soma(){
+			//console.log(arguments);
+			var resultado = 0;
+			for(var i in arguments){
+				// IMPRIMINDO VALORES
+				//console.log(arguments[i]);
+				resultado += arguments[i];
+			}
+			return resultado;
+		}
+		console.log(soma(7, 8, 3.2, 'Texto'));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+

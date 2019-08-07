@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Atividade Fixação Conteúdo:
+		Baseado no exemplo da aula "Praticando um pouco - Percorrendo e listando itens de Arrays", implemente a mesma solução, porém utilizando o comando for. 
+		Baseado no exemplo da aula "Praticando um pouco - Criando uma tabuada de 1 a 10
+(laços encadeados)", implemente a mesma solução, porém utilizando o comando while
+</title>
+	<meta charset="utf-8">
+	<script>
+		// 1)
+		var lista_frutas = Array();
+
+		lista_frutas[0] = 'Banana';
+		lista_frutas[1] = 'Maçã';
+		lista_frutas[2] = 'Morango';
+		lista_frutas[3] = 'Uva';
+
+		console.log(lista_frutas.length);
+
+		var y = 0;
+		// IMPRIMINDO VALORES DO ARRAY
+		for(var y = 0; y < lista_frutas.length; y++){
+			document.write(lista_frutas[y] + '<br>');
+		}
+		document.write('<hr>');
+
+		// 2)
+		var a = b = 1;
+		while(a <= 10){
+			b = 0;
+			while(b <= 10) {
+				document.write(a + ' x ' + b + ' = ' + (a * b) + '<br>');
+				b++;
+			}			
+			document.write('<hr>');
+			a++;
+		}
+
+		console.log(a);
+		console.log(b);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
