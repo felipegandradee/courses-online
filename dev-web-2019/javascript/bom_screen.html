@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript -BOM : Screen </title>
+	<meta charset="utf-8">
+	<script>
+		var height = window.screen.availHeight;
+		var width = window.screen.availWidth;
+
+		document.write('Altura do navegador (sem barra de ferramentas) é: ' + height + '<br>'); 
+		document.write('Largura do navegador (sem barra de ferramentas) é: ' + width + '<br>'); 
+
+		if (width < 500) {
+			document.write('Lógica para impressão do menu versão mobile');
+		} else{
+			document.write('Lógica para impressão do menu versão web');
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
