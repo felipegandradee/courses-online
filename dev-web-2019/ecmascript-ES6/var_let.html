@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Model Class</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // 3 ESCOPOS: GLOBAL, FUNÇÃO E BLOCO
+                // VARIÁVEIS
+                    var serie = 'Friends';
+
+                         // ESCOPO : FUNÇÃO
+                         function x(){
+                            var serie = 'Game of Thrones';
+                            console.log('função: ' + serie);
+                            console.log('dentro da função: ' + serie2);
+
+                         // ESCOPO: BLOCO DE FUNÇÕES
+                            if (true) {
+                                console.log('bloco dentro da função: ' + serie);
+                                    }
+                            }
+
+                               
+
+                        // ESCOPO: BLOCOS
+                            if (true) {
+                                 console.log('global: ' + serie);
+                                var serie2 = 'The Walking Dead'; // TORNA-SE GLOBAL, SOFRENDO ELEVAÇÃO(HOSTING)
+                                 x();
+                                console.log('bloco: ' + serie2);
+                            }
+
+                            console.log('global: ' + serie2);
+
+                // LET
+                        if (true) {
+                                let serie3 = 'Arrow';
+                                console.log('Seu escopo: ' + serie3);
+                        }
+                        console.log('Fora do seu escopo: ' + serie3); // ERRO
+                                         
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
