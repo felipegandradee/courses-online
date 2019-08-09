@@ -19,14 +19,12 @@
                             if (true) {
                                 console.log('bloco dentro da função: ' + serie);
                                     }
-                            }
-
-                               
+                            }                               
 
                         // ESCOPO: BLOCOS
                             if (true) {
                                  console.log('global: ' + serie);
-                                var serie2 = 'The Walking Dead'; // TORNA-SE GLOBAL, SOFRENDO ELEVAÇÃO(HOSTING)
+                                var serie2 = 'The Walking Dead'; // TORNA-SE GLOBAL, SOFRENDO ELEVAÇÃO(HOSTING) COM USO DO 'VAR'
                                  x();
                                 console.log('bloco: ' + serie2);
                             }
@@ -40,10 +38,10 @@
                         }
                         console.log('Fora do seu escopo: ' + serie3); // ERRO
                                          
-
     </script>
 </head>
 <body>
     <div id="output"></div>
 </body>
 </html>
+

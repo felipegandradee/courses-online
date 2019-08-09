@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Const </title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+            const SERIE = 'Friends';
+
+            function x (){
+                const SERIE = 'The Walking Dead';
+                 console.log('Escopo da função: ' + SERIE); // The Walking Dead
+            }
+            x();
+
+            console.log('Escopo Global: ' + SERIE); // Friends
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
