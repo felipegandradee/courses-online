@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Template String Tagged</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+            const city = 'Dublin';
+            const something = 'Guinness';
+            const otherThing = 'Leprechoums';
+
+            const ireland = `I live in ${city} the city of ${something} and ${otherThing}!`;
+
+            document.body.innerHTML = ireland; // IMPRIMINDO NO HTML         
+    </script>
+    <style type="text/css">
+        .green{
+            color: green;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+

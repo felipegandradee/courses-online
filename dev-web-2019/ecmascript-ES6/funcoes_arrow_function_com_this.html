@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Arrow Function com lexical this</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click', function(){
+            console.log(this); // THIS ESTÁ SE REFERINDO AO btn
+        }) ;  
+
+        const btn2 = document.getElementById('btn2'); 
+
+        btn2.addEventListener('click', () => {
+            console.log(this); // THIS ESTÁ SE REFERINDO AO OBJETO WINDOW
+        }) ;  
+            
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+    <button id="btn">Click Me!</button>
+    <button id="btn2">Click Me!</button>
+</body>
+</html>
+

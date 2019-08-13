@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Template string para fragmentos html </title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+           const article = {
+                title: `Aprendendo Template Strings`,
+                intro: `Uma breve explicação de como se utilizar templates string do ES6 em seu código hoje!`,
+                body: ` Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. `,
+                tags: ['es6', 'js', 'template-literal'],
+                //author: 'Felipe' 
+           };
+
+           function renderAuthor(nome){
+                return (nome) ? nome : 'unknown';
+           }
+
+           const markup = `
+                <article>
+                    <header>
+                        <h1>${article.title}</h1>
+                    </header>
+                    <section>
+                        <p>${article.intro}</p>
+                    </section>
+                    <footer>
+                        <ul>
+                            ${article.tags.map((tag) => `<li>${tag}</li>`).join(``)}
+                        </ul>
+                        <p>
+                            Author: ${renderAuthor(article.author)}
+                        </p>
+                    </footer>
+                </article>        
+                `;
+
+            document.body.innerHTML = markup; // IMPRIMINDO EM HTML
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+   
+</body>
+</html>
+

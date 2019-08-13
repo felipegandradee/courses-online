@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Arrow Function</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // FUNÇÃO ANÔNIMA   
+        let quadrado = function(x = 5){
+            return x * x;
+        };
+
+        document.write(quadrado(3));  
+
+        document.write("<br><hr>");   
+
+        // USANDO A ARROW FUNCTION
+            // APENAS UM PARÂMETRO
+            let quadrado2 = x => {
+                return x * x;
+            };  
+
+            document.write(quadrado2(5));  
+
+            document.write("<br><hr>");
+
+            // APENAS UM PARÂMETRO E RETURN IMPLÍCITO(APENAS QUANDO HOUVER SÓ ELE NO BLOCO DA FUNÇÃO)
+            let quadrado3 = x => x * x; 
+
+            document.write(quadrado3(2));
+
+             document.write("<br><hr>");
+
+            // CÁLCULO DE PAR OU IMPAR ( RETORNO IMPLÍCITO )
+            let parOuImpar = numero => parseInt(numero) % 2 === 0 ? 'par' : 'ímpar';
+
+            document.write(parOuImpar(prompt('Digite um valor:')));    
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

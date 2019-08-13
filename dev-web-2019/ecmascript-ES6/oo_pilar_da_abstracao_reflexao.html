@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - OO: Pilar da Abstração Reflexao</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // PARADIGMA PROCEDURAL
+            // CADEIRA
+            let qtde_pernas = 4;
+            let giratoria = true;
+            let cor = 'azul';
+
+            function girar_cadeira(){
+                if(giratoria === true){
+                    console.log('girou');
+                } else{
+                    console.log('cadeira não é giratória');
+                }
+            }
+            girar_cadeira();   
+
+            // ARRAY DE CADEIRAS
+            let cadeiras = Array();
+            cadeiras[0] = Array();
+            cadeiras[0]['qtde_pernas'] = 4;  
+            cadeiras[0]['giratoria'] = false;  
+            cadeiras[0]['cor'] = 'azul';
+            cadeiras[1] = Array();
+            cadeiras[1]['qtde_pernas'] = 1;  
+            cadeiras[1]['giratoria'] = true;  
+            cadeiras[1]['cor'] = 'vermelho';
+
+            function girar_cadeiras(indice){
+                if(cadeiras[indice]['giratoria'] === true){
+                    console.log('girou');
+                } else{
+                    console.log('cadeira não é giratória');
+                }
+            }
+            girar_cadeiras(0);  
+
+            function adicionar_cadeira(qtde_pernas, giratoria, cor){
+                let cadeira = Array();
+                cadeira['qtde_pernas'] = qtde_pernas; 
+                cadeira['giratoria'] = giratoria; 
+                cadeira['cor'] = cor;
+
+                cadeiras.push(cadeira);
+            }
+            adicionar_cadeira(3, false, 'verde');
+            console.log(cadeiras);
+
+        // PARADIGMA OO
+         class Cadeira {
+            constructor(qtde_pernas, giratoria, cor){
+                this.qtde_pernas = qtde_pernas;
+                this.giratoria = giratoria;
+                this.cor = cor;
+            }
+
+            girarCadeira(){
+                if(this.giratoria === true){
+                    console.log('girou');
+                } else{
+                    console.log('cadeira não é giratória');
+                }
+            }
+         }
+         // INSTANCIANDO
+        let cadeira1 = new Cadeira(4, false, 'azul');
+        let cadeira2 = new Cadeira(1, true, 'roxa');
+        cadeira1.girarCadeira();
+        cadeira2.girarCadeira();
+
+        // INSTANCIANDO A PARTIR DE UM ARRAY
+        let cadeirasConj = Array();
+        cadeirasConj.push(new Cadeira(2, true, 'verde'));
+        cadeirasConj.push(new Cadeira(3, false, 'vermelha'));
+        console.log(cadeirasConj);
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+// sofa: cor, lugares, retornavel ou nao
+// metodo retornar sofa
