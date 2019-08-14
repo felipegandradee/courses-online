@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - OO: Pilar do Encapsulamento</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        class Tv{
+            constructor(){
+                this._relacaoCanais = Array(2,4,5,7,10); // UNDERLINE É USADO ANTES DO NOME POR CONVENÇÃO PARA DIZER QUE AQUELE ATRIBUTO/MÉTODO É PRIVADO, PODENDO SER ACESSADO E MODIFICADO PELOS MÉTODOS GETTERS E SETTERS
+                this._canalAtivo = 5;
+                this._volume = 5;
+            }
+
+            // GETTERS E SETTERS
+            get canalAtivo(){
+                return this._canalAtivo;
+            }
+
+            set canalAtivo(canal){
+                // VERIFICANDO SE O CANAL PASSADO EXISTE NA LISTA
+               if(this._relacaoCanais.indexOf(canal) !== -1){
+                    this._canalAtivo = canal;
+               }
+                
+            }
+
+        }
+
+        let tv = new Tv();
+        console.log(tv.canalAtivo); // PEGANDO VALOR PELO MÉTODO GET
+        tv.canalAtivo = 7; // ALTERANDO O VALOR PELO MÉTODO SET    
+        console.log(tv.canalAtivo); 
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

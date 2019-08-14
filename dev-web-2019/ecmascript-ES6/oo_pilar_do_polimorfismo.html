@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - OO: Pilar do Polimorfismo</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        class Animal{
+            constructor(cor, tamanho, peso){
+                this.cor = cor;
+                this.tamanho = tamanho;
+                this.peso = peso;
+            }
+
+            dormir(){
+                console.log('Dormir');    
+            }
+
+        }
+
+        class Passaro extends Animal{
+            constructor(bico, cor, tamanho, peso){
+                super( cor, tamanho, peso); // ATRIBUTOS DA CLASSE ANIMAL
+                this.bico = 'Curto';
+            }
+
+            voar(){
+            console.log('Voar');
+            }
+
+        }
+
+        class Papagaio extends Passaro{
+            constructor(sabeFalar, cor, tamanho, peso){
+                super('médio', cor, tamanho, peso); // ATRIBUTOS DA CLASSE PASSARO
+                this.sabeFalar = sabeFalar;
+            }
+
+            falar(){
+                console.log('Falar');
+            }
+        }
+
+        class Avestruz extends Passaro {
+            constructor(){
+                super('Grande', 'Branco e Preto', 250, 15000);
+            }
+
+            enterrarCabeca(){
+                console.log('Enterrar a cabeça');
+            }
+
+            // SOBREPONDO MÉTODO VOAR
+            voar(){
+            console.log('Não sabe voar');
+            }
+
+        }
+
+        let papagaio = new Papagaio(true, 'verde', 25, 30);
+        let avestruz = new Avestruz();// ATRIBUTOS DA CLASSE ANIMAL TAMBÉM PODEM SER PASSADOS AQUI
+
+        console.log(papagaio);
+        papagaio.voar();
+
+        console.log(avestruz);
+        avestruz.enterrarCabeca();
+        avestruz.voar();
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

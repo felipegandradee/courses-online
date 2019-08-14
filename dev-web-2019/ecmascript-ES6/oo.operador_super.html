@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - OO: Pilar da Herança</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        class Animal{
+            constructor(cor, tamanho, peso){
+                this.cor = cor;
+                this.tamanho = tamanho;
+                this.peso = peso;
+            }
+
+            dormir(){
+                console.log('Dormir');    
+            }
+
+        }
+        class Cachorro extends Animal { // extends - HERDAR DE UMA CLASSE
+            constructor(){
+                super('verde', 25, 30); // super() - ACESSAR O CONSTRUTOR DA CLASSE PAI
+                this.orelhas = 'Grandes e caídas';
+            }
+
+            correr(){
+            console.log('Correr');
+            }
+
+            rosnar(){
+            console.log('Rosnar');
+            }
+        }
+
+        class Passaro extends Animal{
+            constructor(bico, cor, tamanho, peso){
+                super( cor, tamanho, peso);
+                this.bico = 'Curto';
+            }
+
+            voar(){
+            console.log('Voar');
+            }
+
+        }
+
+        class Papagaio extends Passaro{
+            constructor(sabeFalar, cor, tamanho, peso){
+                super('médio', cor, tamanho, peso);
+                this.sabeFalar = sabeFalar;
+            }
+
+            falar(){
+                console.log('Falar');
+            }
+        }
+        let papagaio = new Papagaio(true, 'verde', 25, 30);
+        let papagaio2 = new Papagaio(false, 'Branco', 10, 80);
+
+
+        console.log(papagaio);
+        console.log(papagaio2);
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
