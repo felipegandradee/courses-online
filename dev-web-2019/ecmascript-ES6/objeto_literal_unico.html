@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Objeto Literal Único</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        let assinatura = {
+            idCliente:  1000,
+            descricao: 'Acesso a internet',
+            status()
+            {
+                console.log('Ativo');
+            }
+        };
+
+        console.log(assinatura.descricao);    
+
+        // FAZENDO REFERÊNCIA AO OBJETO CRIADO COM SUAS PROPRIEDADES E MÉTODOS, NÃO COM A VARIÁVEL CONTIDA NELE
+        let y = assinatura;
+
+        console.log(y.descricao);     
+         // AS VARIÁVEIS 'Y' E 'ASSINATURA' FAZEM REFERÊNCIA AO MESMO OBJETO
+
+         // MODIFICANDO POR UMA DAS REFERÊNCIAS O OBJETO
+         y.descricao = 'Internet + tv + telefone';
+
+         console.log(assinatura.descricao);  
+         console.log(y.descricao); 
+    </script>
+       
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+

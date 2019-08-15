@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Objeto Literal: Modificando valores</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+       let pessoa = 
+       {
+            nome: 'Felipe',
+            idade: 20
+       };
+
+       // IMPRIMINDO VALORES
+       console.log(pessoa.nome);
+       console.log(pessoa.idade);
+
+       // MODIFICANDO VALORES
+       pessoa.nome = 'José';
+       pessoa.idade = 60;
+       
+       console.log(pessoa.nome);
+       console.log(pessoa.idade);
+    </script>
+       
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

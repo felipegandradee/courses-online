@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Função Factory</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+       let Bicicleta1 = 
+       {
+            cor: 'Branca',
+            marcha: 'única',
+            aro: 12,
+            pedalar()
+            {
+                console.log('Método de pedalar executado');
+            }
+       };
+
+       let Bicicleta2 = 
+       {
+            cor: 'Vermelha',
+            marcha: '18',
+            aro: 26,
+            pedalar()
+            {
+                console.log('Método de pedalar executado');
+            }
+       };
+
+        console.log(Bicicleta1); 
+        console.log(Bicicleta2); 
+
+        // FUNÇÃO FACTORY
+        let BicicletaFactory = function(cor,  marcha, aro)
+        {
+            // PODEMOS IMPLEMENTAR A LÓGICA AQUI, REQUISIÇÃO E RESPOSTA HTTTP
+            return {
+                cor,
+                marcha,
+                aro,
+                pedalar()
+                {
+                    console.log('Método de pedalar executado')
+                }
+            }
+        }
+
+        let Bicicleta3 = BicicletaFactory('Vermelha', '18', 26);
+        console.log(Bicicleta3);
+
+        let Bicicleta4 = BicicletaFactory('Preta', '21', 29);
+        console.log(Bicicleta4);
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+
+

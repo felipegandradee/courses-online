@@ -5,7 +5,43 @@
     <meta charset="utf-8">
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
-       let nome           
+       let nome  = 'Felipe';
+       let idade = 20 ;
+       let sexo = 'Masculino';
+       let profissao = 'Programador';
+
+       let objeto = 
+       {
+            nome: nome,
+            idadeAnos: idade,
+            sexo: sexo,
+            profissao: profissao,
+            exibirResumo: function()
+            {
+                console.log(`${this.nome}, ${this.idadeAnos} anos, ${this.sexo} é ${this.profissao}`);
+            }
+       };
+
+       console.log(objeto);
+       objeto.exibirResumo();
+
+       // MELHORIAS NO ES6
+       let objeto2 = 
+       {
+            // PARA CHAVES QUE POSSUAM O MESMO NOME DA VARIÁVEL, PERMITE-SE OMITIR OS DOIS PONTOS, SEGUIDO DO NOME DA VARIÁVEL
+                // CHAVES COM NOMES DIFERENTES DA VARIÁVEL, MANTÉM ESCRITO OS DOIS
+            nome, //  nome = NOME VARIÁVEL / valor = VALOR DA VARIÁVEL
+            idadeAnos : idade,
+            sexo,
+            profissao,
+            exibirResumo()
+            {
+                console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`);
+            }
+       };     
+
+       console.log(objeto2);
+       objeto2.exibirResumo();
     </script>
        
 </head>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Objeto Literal : Inclusão de Atributos</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        let pessoa = 
+        {
+            nome: 'Maria',
+            idade: 23
+        };           
+
+        console.log(pessoa);
+
+        // INCLUSÃO DE NOVOS VALORES
+            // ATRIBUTOS
+            pessoa.sexo = 'Feminino';
+            console.log(pessoa);
+
+            // MÉTODOS
+            pessoa.dizerOi = () => console.log('Olá, tudo bem?');
+            pessoa.dizerOi();
+    </script>
+       
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+
+
