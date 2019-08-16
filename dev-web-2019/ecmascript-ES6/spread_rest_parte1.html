@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Operador Spread / Rest parte 1</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // CONTEXTO SPREAD
+            // STRING
+            let tituloArtigo = 'Como utilizar operador rest/spread';
+
+            console.log(tituloArtigo);
+            console.log(...tituloArtigo); // ...  -> OPERADOR SPREAD
+            console.log([...tituloArtigo]); // PASSANDO PARA UM ARRAY CADA CARACTERE DA STRING
+
+            // ARRAYS
+            let listaCursos1 = ['NodeJs e MongoDB', 'ES6, TypeScript e Angular 4'];
+            let listaCursos2 = ['Multiplataforma Android/IOS', 'Introdução ao GNU/Linux'];
+            let listaCursosCompleto = [...listaCursos1, 'Web Completo', ...listaCursos2 ,'Android Completo' ];
+            console.log(listaCursosCompleto);
+
+             // OBJETOS
+             let pessoa = 
+             {
+                nome: 'João',
+                idade: 27
+             };
+
+             let clone = 
+             {
+                endereco: 'Rua Abc',
+                ...pessoa
+             };
+             console.log(clone);
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+
+

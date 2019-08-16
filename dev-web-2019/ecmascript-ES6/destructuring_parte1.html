@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Destructuring Assignment parte 1 </title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+         // DESTRUCTURING - ARRAY SIMPLES
+         let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão'];
+         let [a, b = 'Limão', , c, d = 'Banana'] = frutas;  
+         /* 
+         let [] -> OPERADOR DESTRUCTURING
+            NESTE CASO, 'a' RECEBE O ÍNDICE 0 DO ARRAY 'frutas', 'b' ÍNDICE 1 E 'c' ÍNDICE 3, PULANDO O ÍNDICE 2 QUE ESTÁ VAZIO.
+            
+            QUANDO NÃO HOUVER UM VALOR PARA VARIÁVEL DE DENTRO DO OPERADOR DESTRUCTURING, OU SEJA, AQUELE ÍNDICE NÃO EXISTIR, RETORNARÁ UNDEFINED, MAS PARA NÃO TER ESTE RETORNO NA VÁRIAVEL PODEMOS DEFINIR UM VALOR DEFAULT CASO ELE SEJA UNDEFINED
+            EX.: d = 'Banana'
+            OBS.: SE JÁ HOUVER UM VALOR NA POSIÇÃO INDICADA, É IGNORADO O QUE FOR PASSADO
+        */
+         console.log(a, b, c, d);
+
+         // DESTRUCTURING - ARRAY MULTIDIMENSIONAL
+         let coisas = [ ['Abacaxi', 'Uva', 'Pera', 'Mamão'], ['José', 'Maria']];
+         // EXTRAINDO O ÍNDICE DA MARIA e PERA
+         let [[,,pe],[,ma]] = coisas;
+         console.log(ma, pe);
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+
+

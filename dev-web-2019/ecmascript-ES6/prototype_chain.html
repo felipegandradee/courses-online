@@ -7,16 +7,29 @@
     <script type="text/babel">
         let animal = 
         {
-
+            attr1: 'a'
         };
         let vertebrado = 
         {
-            
+            __proto__: animal,
+            attr2: 'b'            
         };
         let ave = 
         {
-            
-        };   
+             __proto__: vertebrado, // AQUI PERMITE TERMOS ACESSO AOS ATRIBUTOS DO OBJETO vertebrado, FAZENDO UMA RELAÇÃO DE HERANÇA
+             attr3: 'c',
+             attr2: 'x'          
+        };
+
+        // animal, vertebrado E ave SÃO HERDEIROS DO Object.prototype  
+
+        console.log(ave.attr2); 
+        console.log(ave.attr1); 
+
+        // CRIANDO ATRIBUTO PARA SER USADO COMO GLOBAL EM QUALQUER OBJETO QUE FOR CRIADO NA APLICAÇÃO, TODOS OBJETOS HERDARÃO ESTE ATRIBUTO
+        Object.prototype.attr50 = 'Z';
+
+        console.log(ave.attr50);
     </script>
 </head>
 <body>

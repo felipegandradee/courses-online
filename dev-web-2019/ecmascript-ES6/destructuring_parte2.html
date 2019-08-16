@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Destructuring Assignment parte 2 </title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+         // DESTRUCTURING - OBJETO
+         let produto = 
+         {
+            descricao: 'Notebook',
+            preco: 1800,
+            detalhes: {
+                fabricante: 'abc',
+                modelo: 'xyz'
+            } // OBJETO DENTRO DE OUTRO OBJETO
+         };
+
+         // ATRIBUINDO AOS NOMES DAS PROPRIEDADES
+        let {descricao, preco, desconto = 5} = produto;
+            /*
+                CASO NÃO EXISTIR AQUELA PROPRIEDADE NO OBJETO RETORNARÁ UNDEFINED, MAS TAMBÉM PODEMOS COLOCAR UM VALOR DEFAULT PARA IMPRIMIR CASO SEJA UNDEFINED.
+                SE FOR EXISTENTE A PROPRIEDADE, O VALOR DEFAULT SERÁ IGNORADO
+            */
+        console.log(descricao, preco, desconto);
+
+        // ATRIBUINDO A VARIAVEIS CRIADAS
+        let{descricao: d, preco: p = 1000} = produto;
+        console.log(d, p);
+
+        // PEGANDO DE OUTROS OBJETOS QUE ESTEJAM CONTIDOS NAQUELE OBJETO
+        let {detalhes: {fabricante, modelo}} = produto;
+        console.log(fabricante, modelo);
+        let {detalhes: {fabricante: f, modelo: m = 'Não informado'}} = produto;
+        console.log(f, m);
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+
+

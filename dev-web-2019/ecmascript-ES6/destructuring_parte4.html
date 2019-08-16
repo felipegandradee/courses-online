@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Destructuring Assignment parte 4 </title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+         // DESTRUCTURING: ARRAY - USANDO COM OPERADOR SPREAD/REST
+         let arr = [10, 20, 30, 40];
+
+         let[a, ...resto] = arr;
+         console.log(a);
+         console.log(resto);
+
+         // DESTRUCTURING: OBJETO - USANDO COM OPERADOR SPREAD/REST
+         let obj = 
+         {
+            a:10, 
+            b:20, 
+            c:30, 
+            d:40
+         };
+
+         let {b, ...z} = obj;
+         console.log(b);
+         console.log(z);
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+
+

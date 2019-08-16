@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcmaScript ES6 - Operador Spread / Rest parte 2</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // CONTEXTO REST
+            // FUNÇÃO
+            function soma(...param)
+            {
+                let resultado = 0;
+                //console.log(param); // FORMATO DE ARRAY
+                param.forEach(v => resultado += v ); // REALIZANDO SOMA DE TODOS VALORES PASSADOS PELO PARAMETRO
+                return resultado;
+            }
+
+            console.log(soma(3, 8, 5, 7, -8, 10, 115));
+
+            function multiplicacao(m, ...p)
+            {
+                //console.log(m);
+                let resultado = 0;
+                //console.log(p);
+
+                p.forEach(v => resultado += m * v); // TODO VALOR 'v' SERÁ MULTIPLICADO AO PARAMETRO 'm', ACRESCENTANDO AO 'resultado'
+                return resultado;
+            }
+
+            console.log(multiplicacao(5, 7, 12, 3, 49)); // DO VALOR '7' EM DIANTE SERÁ PASSADO AO OPERADOR REST
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+
+
