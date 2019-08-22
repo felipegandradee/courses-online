@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catálogo de Filmes</title>
+	<meta charset=utf-8>
+	<!-- CDN BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script>
+		function getFilmes()
+		{
+			let xmlHttp = new XMLHttpRequest();
+			xmlHttp.open('GET', 'http://localhost/dev-web-2019/ajax/filmes.xml');
+
+			// CONTROLANDO AS MUDANÇAS DE ESTADO
+			xmlHttp.onreadystatechange = () =>
+			{
+				if (xmlHttp.readyState == 4 && xmlHttp.status == 200) 
+				{
+					let XMLFimes = xmlHttp.responseText; //
+					console.log(XMLFimes); // STRING
+					let parser = new DOMParser(); 
+
+					domFilmes = parser.parseFROMSTRING(XMLFimes, 'text/xml'); // PODENDO SER TAMBÉM 'text/json' OU 'text/html'
+					console.log(domFilmes);// ÁRVORE DE ELEMENTOS 
+
+					jsonFilmes = xmlToJson(domFilmes);
+					console.log(jsonFilmes); // JSON
+				}
+			}
+			// ENVIO DA REQUISIÇÃO
+			xmlHttp.send();
+		}
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-light bg-ligth mb-4">
+		<div class="container">
+			<div class="navbar-brand mb-0 h1">
+				<h3>Catálogo de filmes</h3>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<button type="button" onclick="getFilmes()" class="btn btn-success">Listar Filmes</button>
+		</div>
+	</div>
+</body>
+</html>
